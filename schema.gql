@@ -4,12 +4,20 @@
 # -----------------------------------------------
 
 type Client {
+  document: Document!
+  email: String!
   id: ID!
   name: String!
 }
 
+type Document {
+  cnpj: String!
+  cpf: String!
+  id: ID!
+}
+
 type Mutation {
-  createClients(name: String!): Client!
+  createClients(cnpj: String!, cpf: String!, email: String!, name: String!): Client!
 }
 
 type Query {

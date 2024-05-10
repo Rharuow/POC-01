@@ -12,8 +12,18 @@ export class ClientResolver {
   }
 
   @Mutation(() => Client)
-  async createClients(@Arg("name") name: string) {
-    const client = { id: crypto.randomUUID(), name };
+  async createClients(
+    @Arg("name") name: string,
+    @Arg("email") email: string,
+    @Arg("cpf") cpf: string,
+    @Arg("cnpj") cnpj: string
+  ) {
+    const client = {
+      id: crypto.randomUUID(),
+      name,
+      email,
+      document: { id: crypto.randomUUID(), cpf, cnpj },
+    };
 
     this.data.push(client);
 
