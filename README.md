@@ -95,5 +95,5 @@ This project use Apollo Server and graphQL.
 
   cd ./POC-01-BACK
 
-  yarn && yarn start:dev
+  yarn && yarn dev
 ```

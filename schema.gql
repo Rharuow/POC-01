@@ -3,7 +3,14 @@
 # !!!   DO NOT MODIFY THIS FILE BY YOURSELF   !!!
 # -----------------------------------------------
 
+type Address {
+  billing: String!
+  delivery: String!
+  id: ID!
+}
+
 type Client {
+  address: Address!
   document: Document!
   email: String!
   id: ID!
@@ -17,7 +24,7 @@ type Document {
 }
 
 type Mutation {
-  createClients(cnpj: String!, cpf: String!, email: String!, name: String!): Client!
+  createClients(billing: String!, cnpj: String!, cpf: String!, delivery: String!, email: String!, name: String!): Client!
 }
 
 type Query {

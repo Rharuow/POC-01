@@ -16,13 +16,16 @@ export class ClientResolver {
     @Arg("name") name: string,
     @Arg("email") email: string,
     @Arg("cpf") cpf: string,
-    @Arg("cnpj") cnpj: string
+    @Arg("cnpj") cnpj: string,
+    @Arg("billing") billing: string,
+    @Arg("delivery") delivery: string
   ) {
     const client = {
       id: crypto.randomUUID(),
       name,
       email,
       document: { id: crypto.randomUUID(), cpf, cnpj },
+      address: { id: crypto.randomUUID(), billing, delivery },
     };
 
     this.data.push(client);
