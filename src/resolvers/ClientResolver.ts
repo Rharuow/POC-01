@@ -1,13 +1,16 @@
 import crypto from "crypto";
 import { Arg, Mutation, Query, Resolver } from "type-graphql";
 import { Client } from "../models/Clients";
+import { DocumentResolver } from "./DocumentResolver";
 
 @Resolver()
 export class ClientResolver {
   private data: Array<Client> = [];
 
+  constructor(private documentResolver: DocumentResolver) {}
+
   @Query(() => [Client])
-  async clients() {
+  async getClients() {
     return this.data;
   }
 
@@ -20,16 +23,22 @@ export class ClientResolver {
     @Arg("billing") billing: string,
     @Arg("delivery") delivery: string
   ) {
-    const client = {
-      id: crypto.randomUUID(),
-      name,
-      email,
-      document: { id: crypto.randomUUID(), cpf, cnpj },
-      address: { id: crypto.randomUUID(), billing, delivery },
-    };
+    try {
+      const document = await this.documentResolver.createDocument(cpf, cnpj);
 
-    this.data.push(client);
+      const client = {
+        id: crypto.randomUUID(),
+        name,
+        email,
+        document,
+        address: { id: crypto.randomUUID(), billing, delivery },
+      };
 
-    return client;
+      this.data.push(client);
+
+      return client;
+    } catch (error) {
+      throw error;
+    }
   }
 }
