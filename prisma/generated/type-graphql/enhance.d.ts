@@ -9,6 +9,10 @@ declare const crudResolversMap: {
     Address: typeof crudResolvers.AddressCrudResolver;
     Document: typeof crudResolvers.DocumentCrudResolver;
     Client: typeof crudResolvers.ClientCrudResolver;
+    Category: typeof crudResolvers.CategoryCrudResolver;
+    Product: typeof crudResolvers.ProductCrudResolver;
+    Order: typeof crudResolvers.OrderCrudResolver;
+    Sale: typeof crudResolvers.SaleCrudResolver;
 };
 type ResolverModelNames = keyof typeof crudResolversMap;
 type ModelResolverActionNames<TModel extends ResolverModelNames> = keyof typeof crudResolversMap[TModel]["prototype"];
@@ -36,6 +40,10 @@ declare const relationResolversMap: {
     Address: typeof relationResolvers.AddressRelationsResolver;
     Document: typeof relationResolvers.DocumentRelationsResolver;
     Client: typeof relationResolvers.ClientRelationsResolver;
+    Category: typeof relationResolvers.CategoryRelationsResolver;
+    Product: typeof relationResolvers.ProductRelationsResolver;
+    Order: typeof relationResolvers.OrderRelationsResolver;
+    Sale: typeof relationResolvers.SaleRelationsResolver;
 };
 type RelationResolverModelNames = keyof typeof relationResolversMap;
 type RelationResolverActionNames<TModel extends RelationResolverModelNames> = keyof typeof relationResolversMap[TModel]["prototype"];

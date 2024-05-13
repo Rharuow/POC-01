@@ -1,7 +1,11 @@
 export { AddressScalarFieldEnum } from "./AddressScalarFieldEnum";
+export { CategoryScalarFieldEnum } from "./CategoryScalarFieldEnum";
 export { ClientScalarFieldEnum } from "./ClientScalarFieldEnum";
 export { DocumentScalarFieldEnum } from "./DocumentScalarFieldEnum";
 export { NullsOrder } from "./NullsOrder";
+export { OrderScalarFieldEnum } from "./OrderScalarFieldEnum";
+export { ProductScalarFieldEnum } from "./ProductScalarFieldEnum";
 export { QueryMode } from "./QueryMode";
+export { SaleScalarFieldEnum } from "./SaleScalarFieldEnum";
 export { SortOrder } from "./SortOrder";
 export { TransactionIsolationLevel } from "./TransactionIsolationLevel";

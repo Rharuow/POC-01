@@ -7,6 +7,7 @@ const AddressUpdateOneRequiredWithoutClientNestedInput_1 = require("../inputs/Ad
 const DateTimeFieldUpdateOperationsInput_1 = require("../inputs/DateTimeFieldUpdateOperationsInput");
 const DocumentUpdateOneRequiredWithoutClientNestedInput_1 = require("../inputs/DocumentUpdateOneRequiredWithoutClientNestedInput");
 const NullableDateTimeFieldUpdateOperationsInput_1 = require("../inputs/NullableDateTimeFieldUpdateOperationsInput");
+const SaleUpdateManyWithoutClientNestedInput_1 = require("../inputs/SaleUpdateManyWithoutClientNestedInput");
 const StringFieldUpdateOperationsInput_1 = require("../inputs/StringFieldUpdateOperationsInput");
 let ClientUpdateInput = class ClientUpdateInput {
 };
@@ -59,6 +60,12 @@ tslib_1.__decorate([
     }),
     tslib_1.__metadata("design:type", AddressUpdateOneRequiredWithoutClientNestedInput_1.AddressUpdateOneRequiredWithoutClientNestedInput)
 ], ClientUpdateInput.prototype, "address", void 0);
+tslib_1.__decorate([
+    TypeGraphQL.Field(_type => SaleUpdateManyWithoutClientNestedInput_1.SaleUpdateManyWithoutClientNestedInput, {
+        nullable: true
+    }),
+    tslib_1.__metadata("design:type", SaleUpdateManyWithoutClientNestedInput_1.SaleUpdateManyWithoutClientNestedInput)
+], ClientUpdateInput.prototype, "sales", void 0);
 exports.ClientUpdateInput = ClientUpdateInput = tslib_1.__decorate([
     TypeGraphQL.InputType("ClientUpdateInput", {})
 ], ClientUpdateInput);

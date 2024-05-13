@@ -6,6 +6,7 @@ const TypeGraphQL = tslib_1.__importStar(require("type-graphql"));
 const DateTimeFieldUpdateOperationsInput_1 = require("../inputs/DateTimeFieldUpdateOperationsInput");
 const DocumentUpdateOneRequiredWithoutClientNestedInput_1 = require("../inputs/DocumentUpdateOneRequiredWithoutClientNestedInput");
 const NullableDateTimeFieldUpdateOperationsInput_1 = require("../inputs/NullableDateTimeFieldUpdateOperationsInput");
+const SaleUpdateManyWithoutClientNestedInput_1 = require("../inputs/SaleUpdateManyWithoutClientNestedInput");
 const StringFieldUpdateOperationsInput_1 = require("../inputs/StringFieldUpdateOperationsInput");
 let ClientUpdateWithoutAddressInput = class ClientUpdateWithoutAddressInput {
 };
@@ -52,6 +53,12 @@ tslib_1.__decorate([
     }),
     tslib_1.__metadata("design:type", DocumentUpdateOneRequiredWithoutClientNestedInput_1.DocumentUpdateOneRequiredWithoutClientNestedInput)
 ], ClientUpdateWithoutAddressInput.prototype, "document", void 0);
+tslib_1.__decorate([
+    TypeGraphQL.Field(_type => SaleUpdateManyWithoutClientNestedInput_1.SaleUpdateManyWithoutClientNestedInput, {
+        nullable: true
+    }),
+    tslib_1.__metadata("design:type", SaleUpdateManyWithoutClientNestedInput_1.SaleUpdateManyWithoutClientNestedInput)
+], ClientUpdateWithoutAddressInput.prototype, "sales", void 0);
 exports.ClientUpdateWithoutAddressInput = ClientUpdateWithoutAddressInput = tslib_1.__decorate([
     TypeGraphQL.InputType("ClientUpdateWithoutAddressInput", {})
 ], ClientUpdateWithoutAddressInput);

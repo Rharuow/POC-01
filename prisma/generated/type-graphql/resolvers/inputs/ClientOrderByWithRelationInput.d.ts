@@ -1,5 +1,6 @@
 import { AddressOrderByWithRelationInput } from "../inputs/AddressOrderByWithRelationInput";
 import { DocumentOrderByWithRelationInput } from "../inputs/DocumentOrderByWithRelationInput";
+import { SaleOrderByRelationAggregateInput } from "../inputs/SaleOrderByRelationAggregateInput";
 import { SortOrderInput } from "../inputs/SortOrderInput";
 export declare class ClientOrderByWithRelationInput {
     id?: "asc" | "desc" | undefined;
@@ -12,4 +13,5 @@ export declare class ClientOrderByWithRelationInput {
     addressId?: "asc" | "desc" | undefined;
     document?: DocumentOrderByWithRelationInput | undefined;
     address?: AddressOrderByWithRelationInput | undefined;
+    sales?: SaleOrderByRelationAggregateInput | undefined;
 }

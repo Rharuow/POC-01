@@ -1,4 +1,5 @@
 import { AddressCreateNestedOneWithoutClientInput } from "../inputs/AddressCreateNestedOneWithoutClientInput";
+import { SaleCreateNestedManyWithoutClientInput } from "../inputs/SaleCreateNestedManyWithoutClientInput";
 export declare class ClientCreateWithoutDocumentInput {
     id?: string | undefined;
     createdAt?: Date | undefined;
@@ -7,4 +8,5 @@ export declare class ClientCreateWithoutDocumentInput {
     name: string;
     email: string;
     address: AddressCreateNestedOneWithoutClientInput;
+    sales?: SaleCreateNestedManyWithoutClientInput | undefined;
 }

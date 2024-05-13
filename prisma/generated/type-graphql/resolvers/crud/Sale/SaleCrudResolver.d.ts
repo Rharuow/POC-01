@@ -1,0 +1,35 @@
+import type { GraphQLResolveInfo } from "graphql";
+import { AggregateSaleArgs } from "./args/AggregateSaleArgs";
+import { CreateManySaleArgs } from "./args/CreateManySaleArgs";
+import { CreateOneSaleArgs } from "./args/CreateOneSaleArgs";
+import { DeleteManySaleArgs } from "./args/DeleteManySaleArgs";
+import { DeleteOneSaleArgs } from "./args/DeleteOneSaleArgs";
+import { FindFirstSaleArgs } from "./args/FindFirstSaleArgs";
+import { FindFirstSaleOrThrowArgs } from "./args/FindFirstSaleOrThrowArgs";
+import { FindManySaleArgs } from "./args/FindManySaleArgs";
+import { FindUniqueSaleArgs } from "./args/FindUniqueSaleArgs";
+import { FindUniqueSaleOrThrowArgs } from "./args/FindUniqueSaleOrThrowArgs";
+import { GroupBySaleArgs } from "./args/GroupBySaleArgs";
+import { UpdateManySaleArgs } from "./args/UpdateManySaleArgs";
+import { UpdateOneSaleArgs } from "./args/UpdateOneSaleArgs";
+import { UpsertOneSaleArgs } from "./args/UpsertOneSaleArgs";
+import { Sale } from "../../../models/Sale";
+import { AffectedRowsOutput } from "../../outputs/AffectedRowsOutput";
+import { AggregateSale } from "../../outputs/AggregateSale";
+import { SaleGroupBy } from "../../outputs/SaleGroupBy";
+export declare class SaleCrudResolver {
+    aggregateSale(ctx: any, info: GraphQLResolveInfo, args: AggregateSaleArgs): Promise<AggregateSale>;
+    createManySale(ctx: any, info: GraphQLResolveInfo, args: CreateManySaleArgs): Promise<AffectedRowsOutput>;
+    createOneSale(ctx: any, info: GraphQLResolveInfo, args: CreateOneSaleArgs): Promise<Sale>;
+    deleteManySale(ctx: any, info: GraphQLResolveInfo, args: DeleteManySaleArgs): Promise<AffectedRowsOutput>;
+    deleteOneSale(ctx: any, info: GraphQLResolveInfo, args: DeleteOneSaleArgs): Promise<Sale | null>;
+    findFirstSale(ctx: any, info: GraphQLResolveInfo, args: FindFirstSaleArgs): Promise<Sale | null>;
+    findFirstSaleOrThrow(ctx: any, info: GraphQLResolveInfo, args: FindFirstSaleOrThrowArgs): Promise<Sale | null>;
+    sales(ctx: any, info: GraphQLResolveInfo, args: FindManySaleArgs): Promise<Sale[]>;
+    sale(ctx: any, info: GraphQLResolveInfo, args: FindUniqueSaleArgs): Promise<Sale | null>;
+    getSale(ctx: any, info: GraphQLResolveInfo, args: FindUniqueSaleOrThrowArgs): Promise<Sale | null>;
+    groupBySale(ctx: any, info: GraphQLResolveInfo, args: GroupBySaleArgs): Promise<SaleGroupBy[]>;
+    updateManySale(ctx: any, info: GraphQLResolveInfo, args: UpdateManySaleArgs): Promise<AffectedRowsOutput>;
+    updateOneSale(ctx: any, info: GraphQLResolveInfo, args: UpdateOneSaleArgs): Promise<Sale | null>;
+    upsertOneSale(ctx: any, info: GraphQLResolveInfo, args: UpsertOneSaleArgs): Promise<Sale>;
+}

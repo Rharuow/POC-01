@@ -1,0 +1,14 @@
+export { AggregateSaleArgs } from "./AggregateSaleArgs";
+export { CreateManySaleArgs } from "./CreateManySaleArgs";
+export { CreateOneSaleArgs } from "./CreateOneSaleArgs";
+export { DeleteManySaleArgs } from "./DeleteManySaleArgs";
+export { DeleteOneSaleArgs } from "./DeleteOneSaleArgs";
+export { FindFirstSaleArgs } from "./FindFirstSaleArgs";
+export { FindFirstSaleOrThrowArgs } from "./FindFirstSaleOrThrowArgs";
+export { FindManySaleArgs } from "./FindManySaleArgs";
+export { FindUniqueSaleArgs } from "./FindUniqueSaleArgs";
+export { FindUniqueSaleOrThrowArgs } from "./FindUniqueSaleOrThrowArgs";
+export { GroupBySaleArgs } from "./GroupBySaleArgs";
+export { UpdateManySaleArgs } from "./UpdateManySaleArgs";
+export { UpdateOneSaleArgs } from "./UpdateOneSaleArgs";
+export { UpsertOneSaleArgs } from "./UpsertOneSaleArgs";

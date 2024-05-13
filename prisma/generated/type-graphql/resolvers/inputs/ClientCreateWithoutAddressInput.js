@@ -4,6 +4,7 @@ exports.ClientCreateWithoutAddressInput = void 0;
 const tslib_1 = require("tslib");
 const TypeGraphQL = tslib_1.__importStar(require("type-graphql"));
 const DocumentCreateNestedOneWithoutClientInput_1 = require("../inputs/DocumentCreateNestedOneWithoutClientInput");
+const SaleCreateNestedManyWithoutClientInput_1 = require("../inputs/SaleCreateNestedManyWithoutClientInput");
 let ClientCreateWithoutAddressInput = class ClientCreateWithoutAddressInput {
 };
 exports.ClientCreateWithoutAddressInput = ClientCreateWithoutAddressInput;
@@ -49,6 +50,12 @@ tslib_1.__decorate([
     }),
     tslib_1.__metadata("design:type", DocumentCreateNestedOneWithoutClientInput_1.DocumentCreateNestedOneWithoutClientInput)
 ], ClientCreateWithoutAddressInput.prototype, "document", void 0);
+tslib_1.__decorate([
+    TypeGraphQL.Field(_type => SaleCreateNestedManyWithoutClientInput_1.SaleCreateNestedManyWithoutClientInput, {
+        nullable: true
+    }),
+    tslib_1.__metadata("design:type", SaleCreateNestedManyWithoutClientInput_1.SaleCreateNestedManyWithoutClientInput)
+], ClientCreateWithoutAddressInput.prototype, "sales", void 0);
 exports.ClientCreateWithoutAddressInput = ClientCreateWithoutAddressInput = tslib_1.__decorate([
     TypeGraphQL.InputType("ClientCreateWithoutAddressInput", {})
 ], ClientCreateWithoutAddressInput);

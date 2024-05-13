@@ -60,4 +60,62 @@ model Client {
 
   addressId               String @unique
   address                 Address @relation(fields: [addressId], references: [id], onDelete: Cascade)
+
+  sales                   Sale[]
+}
+
+model Category {
+  id                      String @id @default(uuid())
+  createdAt               DateTime   @default(now())
+  deletedAt               DateTime?
+  updatedAt               DateTime   @updatedAt
+
+  name                    String @unique
+
+  produtos                Product[]
+}
+
+model Product {
+  id                      String     @id @default(uuid())
+  createdAt               DateTime   @default(now())
+  deletedAt               DateTime?
+  updatedAt               DateTime   @updatedAt
+
+  name                    String      @unique
+  description             String
+  inventory_quantity      Int         @default(1)
+
+  categories              Category[]
+  orders                  Order[]
+}
+
+model Order {
+  id                      String     @id @default(uuid())
+  createdAt               DateTime   @default(now())
+  deletedAt               DateTime?
+  updatedAt               DateTime   @updatedAt
+
+  amount                  Int        @default(1)
+  totalPrice              Float
+
+  productId               String
+  product                 Product    @relation(fields: [productId], references: [id], onDelete: Cascade)
+
+  saleId                  String
+  sale                    Sale @relation(fields: [saleId], references: [id], onDelete: Cascade)
+}
+
+
+model Sale {
+  id                      String     @id @default(uuid())
+  createdAt               DateTime   @default(now())
+  deletedAt               DateTime?
+  updatedAt               DateTime   @updatedAt
+
+  totalPrice              Float
+
+  orders                  Order[]
+
+  clientId                String
+  client                  Client @relation(fields: [clientId], references: [id], onDelete: Cascade)
 }

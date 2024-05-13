@@ -1,9 +1,17 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.DocumentCrudResolver = exports.ClientCrudResolver = exports.AddressCrudResolver = void 0;
+exports.SaleCrudResolver = exports.ProductCrudResolver = exports.OrderCrudResolver = exports.DocumentCrudResolver = exports.ClientCrudResolver = exports.CategoryCrudResolver = exports.AddressCrudResolver = void 0;
 var AddressCrudResolver_1 = require("./Address/AddressCrudResolver");
 Object.defineProperty(exports, "AddressCrudResolver", { enumerable: true, get: function () { return AddressCrudResolver_1.AddressCrudResolver; } });
+var CategoryCrudResolver_1 = require("./Category/CategoryCrudResolver");
+Object.defineProperty(exports, "CategoryCrudResolver", { enumerable: true, get: function () { return CategoryCrudResolver_1.CategoryCrudResolver; } });
 var ClientCrudResolver_1 = require("./Client/ClientCrudResolver");
 Object.defineProperty(exports, "ClientCrudResolver", { enumerable: true, get: function () { return ClientCrudResolver_1.ClientCrudResolver; } });
 var DocumentCrudResolver_1 = require("./Document/DocumentCrudResolver");
 Object.defineProperty(exports, "DocumentCrudResolver", { enumerable: true, get: function () { return DocumentCrudResolver_1.DocumentCrudResolver; } });
+var OrderCrudResolver_1 = require("./Order/OrderCrudResolver");
+Object.defineProperty(exports, "OrderCrudResolver", { enumerable: true, get: function () { return OrderCrudResolver_1.OrderCrudResolver; } });
+var ProductCrudResolver_1 = require("./Product/ProductCrudResolver");
+Object.defineProperty(exports, "ProductCrudResolver", { enumerable: true, get: function () { return ProductCrudResolver_1.ProductCrudResolver; } });
+var SaleCrudResolver_1 = require("./Sale/SaleCrudResolver");
+Object.defineProperty(exports, "SaleCrudResolver", { enumerable: true, get: function () { return SaleCrudResolver_1.SaleCrudResolver; } });

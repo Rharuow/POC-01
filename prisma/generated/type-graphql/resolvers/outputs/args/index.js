@@ -1,0 +1,13 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.SaleCountOrdersArgs = exports.ProductCountOrdersArgs = exports.ProductCountCategoriesArgs = exports.ClientCountSalesArgs = exports.CategoryCountProdutosArgs = void 0;
+var CategoryCountProdutosArgs_1 = require("./CategoryCountProdutosArgs");
+Object.defineProperty(exports, "CategoryCountProdutosArgs", { enumerable: true, get: function () { return CategoryCountProdutosArgs_1.CategoryCountProdutosArgs; } });
+var ClientCountSalesArgs_1 = require("./ClientCountSalesArgs");
+Object.defineProperty(exports, "ClientCountSalesArgs", { enumerable: true, get: function () { return ClientCountSalesArgs_1.ClientCountSalesArgs; } });
+var ProductCountCategoriesArgs_1 = require("./ProductCountCategoriesArgs");
+Object.defineProperty(exports, "ProductCountCategoriesArgs", { enumerable: true, get: function () { return ProductCountCategoriesArgs_1.ProductCountCategoriesArgs; } });
+var ProductCountOrdersArgs_1 = require("./ProductCountOrdersArgs");
+Object.defineProperty(exports, "ProductCountOrdersArgs", { enumerable: true, get: function () { return ProductCountOrdersArgs_1.ProductCountOrdersArgs; } });
+var SaleCountOrdersArgs_1 = require("./SaleCountOrdersArgs");
+Object.defineProperty(exports, "SaleCountOrdersArgs", { enumerable: true, get: function () { return SaleCountOrdersArgs_1.SaleCountOrdersArgs; } });

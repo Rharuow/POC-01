@@ -3,6 +3,7 @@ import { ClientWhereInput } from "../inputs/ClientWhereInput";
 import { DateTimeFilter } from "../inputs/DateTimeFilter";
 import { DateTimeNullableFilter } from "../inputs/DateTimeNullableFilter";
 import { DocumentRelationFilter } from "../inputs/DocumentRelationFilter";
+import { SaleListRelationFilter } from "../inputs/SaleListRelationFilter";
 import { StringFilter } from "../inputs/StringFilter";
 export declare class ClientWhereUniqueInput {
     id?: string | undefined;
@@ -18,4 +19,5 @@ export declare class ClientWhereUniqueInput {
     name?: StringFilter | undefined;
     document?: DocumentRelationFilter | undefined;
     address?: AddressRelationFilter | undefined;
+    sales?: SaleListRelationFilter | undefined;
 }

@@ -1,5 +1,6 @@
 import { AddressCreateNestedOneWithoutClientInput } from "../inputs/AddressCreateNestedOneWithoutClientInput";
 import { DocumentCreateNestedOneWithoutClientInput } from "../inputs/DocumentCreateNestedOneWithoutClientInput";
+import { SaleCreateNestedManyWithoutClientInput } from "../inputs/SaleCreateNestedManyWithoutClientInput";
 export declare class ClientCreateInput {
     id?: string | undefined;
     createdAt?: Date | undefined;
@@ -9,4 +10,5 @@ export declare class ClientCreateInput {
     email: string;
     document: DocumentCreateNestedOneWithoutClientInput;
     address: AddressCreateNestedOneWithoutClientInput;
+    sales?: SaleCreateNestedManyWithoutClientInput | undefined;
 }

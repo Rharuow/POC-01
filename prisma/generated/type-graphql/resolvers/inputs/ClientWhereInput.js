@@ -7,6 +7,7 @@ const AddressRelationFilter_1 = require("../inputs/AddressRelationFilter");
 const DateTimeFilter_1 = require("../inputs/DateTimeFilter");
 const DateTimeNullableFilter_1 = require("../inputs/DateTimeNullableFilter");
 const DocumentRelationFilter_1 = require("../inputs/DocumentRelationFilter");
+const SaleListRelationFilter_1 = require("../inputs/SaleListRelationFilter");
 const StringFilter_1 = require("../inputs/StringFilter");
 let ClientWhereInput = class ClientWhereInput {
 };
@@ -89,6 +90,12 @@ tslib_1.__decorate([
     }),
     tslib_1.__metadata("design:type", AddressRelationFilter_1.AddressRelationFilter)
 ], ClientWhereInput.prototype, "address", void 0);
+tslib_1.__decorate([
+    TypeGraphQL.Field(_type => SaleListRelationFilter_1.SaleListRelationFilter, {
+        nullable: true
+    }),
+    tslib_1.__metadata("design:type", SaleListRelationFilter_1.SaleListRelationFilter)
+], ClientWhereInput.prototype, "sales", void 0);
 exports.ClientWhereInput = ClientWhereInput = tslib_1.__decorate([
     TypeGraphQL.InputType("ClientWhereInput", {})
 ], ClientWhereInput);
