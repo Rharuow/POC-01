@@ -1,0 +1,35 @@
+import type { GraphQLResolveInfo } from "graphql";
+import { AggregateClientArgs } from "./args/AggregateClientArgs";
+import { CreateManyClientArgs } from "./args/CreateManyClientArgs";
+import { CreateOneClientArgs } from "./args/CreateOneClientArgs";
+import { DeleteManyClientArgs } from "./args/DeleteManyClientArgs";
+import { DeleteOneClientArgs } from "./args/DeleteOneClientArgs";
+import { FindFirstClientArgs } from "./args/FindFirstClientArgs";
+import { FindFirstClientOrThrowArgs } from "./args/FindFirstClientOrThrowArgs";
+import { FindManyClientArgs } from "./args/FindManyClientArgs";
+import { FindUniqueClientArgs } from "./args/FindUniqueClientArgs";
+import { FindUniqueClientOrThrowArgs } from "./args/FindUniqueClientOrThrowArgs";
+import { GroupByClientArgs } from "./args/GroupByClientArgs";
+import { UpdateManyClientArgs } from "./args/UpdateManyClientArgs";
+import { UpdateOneClientArgs } from "./args/UpdateOneClientArgs";
+import { UpsertOneClientArgs } from "./args/UpsertOneClientArgs";
+import { Client } from "../../../models/Client";
+import { AffectedRowsOutput } from "../../outputs/AffectedRowsOutput";
+import { AggregateClient } from "../../outputs/AggregateClient";
+import { ClientGroupBy } from "../../outputs/ClientGroupBy";
+export declare class ClientCrudResolver {
+    aggregateClient(ctx: any, info: GraphQLResolveInfo, args: AggregateClientArgs): Promise<AggregateClient>;
+    createManyClient(ctx: any, info: GraphQLResolveInfo, args: CreateManyClientArgs): Promise<AffectedRowsOutput>;
+    createOneClient(ctx: any, info: GraphQLResolveInfo, args: CreateOneClientArgs): Promise<Client>;
+    deleteManyClient(ctx: any, info: GraphQLResolveInfo, args: DeleteManyClientArgs): Promise<AffectedRowsOutput>;
+    deleteOneClient(ctx: any, info: GraphQLResolveInfo, args: DeleteOneClientArgs): Promise<Client | null>;
+    findFirstClient(ctx: any, info: GraphQLResolveInfo, args: FindFirstClientArgs): Promise<Client | null>;
+    findFirstClientOrThrow(ctx: any, info: GraphQLResolveInfo, args: FindFirstClientOrThrowArgs): Promise<Client | null>;
+    clients(ctx: any, info: GraphQLResolveInfo, args: FindManyClientArgs): Promise<Client[]>;
+    client(ctx: any, info: GraphQLResolveInfo, args: FindUniqueClientArgs): Promise<Client | null>;
+    getClient(ctx: any, info: GraphQLResolveInfo, args: FindUniqueClientOrThrowArgs): Promise<Client | null>;
+    groupByClient(ctx: any, info: GraphQLResolveInfo, args: GroupByClientArgs): Promise<ClientGroupBy[]>;
+    updateManyClient(ctx: any, info: GraphQLResolveInfo, args: UpdateManyClientArgs): Promise<AffectedRowsOutput>;
+    updateOneClient(ctx: any, info: GraphQLResolveInfo, args: UpdateOneClientArgs): Promise<Client | null>;
+    upsertOneClient(ctx: any, info: GraphQLResolveInfo, args: UpsertOneClientArgs): Promise<Client>;
+}

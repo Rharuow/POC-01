@@ -4,9 +4,14 @@
 # -----------------------------------------------
 
 type Address {
-  billing: String!
-  delivery: String!
+  billing: String
+  delivery: String
   id: ID!
+}
+
+type Category {
+  id: ID!
+  name: String!
 }
 
 type Client {
@@ -18,15 +23,37 @@ type Client {
 }
 
 type Document {
-  cnpj: String!
-  cpf: String!
+  cnpj: String
+  cpf: String
   id: ID!
 }
 
 type Mutation {
-  createClients(billing: String!, cnpj: String!, cpf: String!, delivery: String!, email: String!, name: String!): Client!
+  createClients(billing: String, cnpj: String, cpf: String, delivery: String, email: String!, name: String!): Client!
+  createOrders(amount: Float!, productId: String!): Order!
+  createProduct(amount: Float!, categoryName: String!, description: String!, name: String!, price: Float!): Product!
+}
+
+type Order {
+  amount: Float!
+  id: ID!
+  product: Product!
+  totalPrice: Float!
+}
+
+type Product {
+  amount: Float!
+  category: Category!
+  description: String!
+  id: ID!
+  name: String!
+  price: Float!
 }
 
 type Query {
-  clients: [Client!]!
+  getClient(id: String!): Client!
+  getClients: [Client!]!
+  getOrders: [Order!]!
+  getProduct(id: String!): Product!
+  getProducts: [Product!]!
 }

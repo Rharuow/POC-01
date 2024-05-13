@@ -1,0 +1,35 @@
+import type { GraphQLResolveInfo } from "graphql";
+import { AggregateAddressArgs } from "./args/AggregateAddressArgs";
+import { CreateManyAddressArgs } from "./args/CreateManyAddressArgs";
+import { CreateOneAddressArgs } from "./args/CreateOneAddressArgs";
+import { DeleteManyAddressArgs } from "./args/DeleteManyAddressArgs";
+import { DeleteOneAddressArgs } from "./args/DeleteOneAddressArgs";
+import { FindFirstAddressArgs } from "./args/FindFirstAddressArgs";
+import { FindFirstAddressOrThrowArgs } from "./args/FindFirstAddressOrThrowArgs";
+import { FindManyAddressArgs } from "./args/FindManyAddressArgs";
+import { FindUniqueAddressArgs } from "./args/FindUniqueAddressArgs";
+import { FindUniqueAddressOrThrowArgs } from "./args/FindUniqueAddressOrThrowArgs";
+import { GroupByAddressArgs } from "./args/GroupByAddressArgs";
+import { UpdateManyAddressArgs } from "./args/UpdateManyAddressArgs";
+import { UpdateOneAddressArgs } from "./args/UpdateOneAddressArgs";
+import { UpsertOneAddressArgs } from "./args/UpsertOneAddressArgs";
+import { Address } from "../../../models/Address";
+import { AddressGroupBy } from "../../outputs/AddressGroupBy";
+import { AffectedRowsOutput } from "../../outputs/AffectedRowsOutput";
+import { AggregateAddress } from "../../outputs/AggregateAddress";
+export declare class AddressCrudResolver {
+    aggregateAddress(ctx: any, info: GraphQLResolveInfo, args: AggregateAddressArgs): Promise<AggregateAddress>;
+    createManyAddress(ctx: any, info: GraphQLResolveInfo, args: CreateManyAddressArgs): Promise<AffectedRowsOutput>;
+    createOneAddress(ctx: any, info: GraphQLResolveInfo, args: CreateOneAddressArgs): Promise<Address>;
+    deleteManyAddress(ctx: any, info: GraphQLResolveInfo, args: DeleteManyAddressArgs): Promise<AffectedRowsOutput>;
+    deleteOneAddress(ctx: any, info: GraphQLResolveInfo, args: DeleteOneAddressArgs): Promise<Address | null>;
+    findFirstAddress(ctx: any, info: GraphQLResolveInfo, args: FindFirstAddressArgs): Promise<Address | null>;
+    findFirstAddressOrThrow(ctx: any, info: GraphQLResolveInfo, args: FindFirstAddressOrThrowArgs): Promise<Address | null>;
+    addresses(ctx: any, info: GraphQLResolveInfo, args: FindManyAddressArgs): Promise<Address[]>;
+    address(ctx: any, info: GraphQLResolveInfo, args: FindUniqueAddressArgs): Promise<Address | null>;
+    getAddress(ctx: any, info: GraphQLResolveInfo, args: FindUniqueAddressOrThrowArgs): Promise<Address | null>;
+    groupByAddress(ctx: any, info: GraphQLResolveInfo, args: GroupByAddressArgs): Promise<AddressGroupBy[]>;
+    updateManyAddress(ctx: any, info: GraphQLResolveInfo, args: UpdateManyAddressArgs): Promise<AffectedRowsOutput>;
+    updateOneAddress(ctx: any, info: GraphQLResolveInfo, args: UpdateOneAddressArgs): Promise<Address | null>;
+    upsertOneAddress(ctx: any, info: GraphQLResolveInfo, args: UpsertOneAddressArgs): Promise<Address>;
+}

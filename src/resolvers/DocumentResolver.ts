@@ -1,35 +1,46 @@
-import crypto from "crypto";
 import { Arg, Mutation, Query, Resolver } from "type-graphql";
-import { Document } from "../models/Document";
+import { Document } from "../../prisma/generated/type-graphql";
+import { prisma } from "../../prisma";
 
 @Resolver()
 export class DocumentResolver {
-  private data: Array<Document> = [];
-
-  @Query()
+  @Query((_type) => [Document])
   async getDocuments() {
-    return this.data;
+    const documents = await prisma.document.findMany();
+    return documents;
   }
 
-  @Query()
+  @Query((_type) => Document)
   async getDocument(@Arg("id") id: string) {
-    return this.data.find((document) => document.id === id);
+    const document = await prisma.document.findUniqueOrThrow({
+      where: { id },
+    });
+
+    return document;
   }
 
-  @Query()
-  async getDocumentByCpf(@Arg("cpf") cpf: string) {
-    return this.data.find((document) => document.cpf === cpf);
+  @Query((_type) => Document)
+  async getDocumentByCpf(@Arg("cpf", { nullable: true }) cpf?: string) {
+    const document = await prisma.document.findUniqueOrThrow({
+      where: { cpf },
+    });
+
+    return document;
   }
 
-  @Query()
-  async getDocumentByCnpj(@Arg("cnpj") cnpj: string) {
-    return this.data.find((document) => document.cnpj === cnpj);
+  @Query((_type) => Document)
+  async getDocumentByCnpj(@Arg("cnpj", { nullable: true }) cnpj?: string) {
+    const document = await prisma.document.findUniqueOrThrow({
+      where: { cnpj },
+    });
+
+    return document;
   }
 
   @Mutation((_type) => Document)
   async createDocument(
-    @Arg("cpf", { nullable: true }) cpf: string,
-    @Arg("cnpj", { nullable: true }) cnpj: string
+    @Arg("cpf", { nullable: true }) cpf?: string,
+    @Arg("cnpj", { nullable: true }) cnpj?: string
   ) {
     try {
       let document = cpf
@@ -37,9 +48,12 @@ export class DocumentResolver {
         : await this.getDocumentByCnpj(cnpj);
       if (document) throw new Error("Document already exists");
 
-      document = { id: crypto.randomUUID(), cnpj, cpf };
-
-      this.data.push(document);
+      document = await prisma.document.create({
+        data: {
+          cnpj: cnpj || null,
+          cpf: cpf || null,
+        },
+      });
 
       return document;
     } catch (error) {
