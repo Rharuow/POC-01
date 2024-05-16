@@ -1,4 +1,4 @@
-import { ClientUpdateOneWithoutDocumentNestedInput } from "../inputs/ClientUpdateOneWithoutDocumentNestedInput";
+import { ClientUpdateOneRequiredWithoutDocumentNestedInput } from "../inputs/ClientUpdateOneRequiredWithoutDocumentNestedInput";
 import { DateTimeFieldUpdateOperationsInput } from "../inputs/DateTimeFieldUpdateOperationsInput";
 import { NullableDateTimeFieldUpdateOperationsInput } from "../inputs/NullableDateTimeFieldUpdateOperationsInput";
 import { NullableStringFieldUpdateOperationsInput } from "../inputs/NullableStringFieldUpdateOperationsInput";
@@ -10,6 +10,5 @@ export declare class DocumentUpdateInput {
     updatedAt?: DateTimeFieldUpdateOperationsInput | undefined;
     cpf?: NullableStringFieldUpdateOperationsInput | undefined;
     cnpj?: NullableStringFieldUpdateOperationsInput | undefined;
-    clientId?: NullableStringFieldUpdateOperationsInput | undefined;
-    client?: ClientUpdateOneWithoutDocumentNestedInput | undefined;
+    client?: ClientUpdateOneRequiredWithoutDocumentNestedInput | undefined;
 }

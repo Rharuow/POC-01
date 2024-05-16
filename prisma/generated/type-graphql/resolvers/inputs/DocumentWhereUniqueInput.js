@@ -3,7 +3,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports.DocumentWhereUniqueInput = void 0;
 const tslib_1 = require("tslib");
 const TypeGraphQL = tslib_1.__importStar(require("type-graphql"));
-const ClientNullableRelationFilter_1 = require("../inputs/ClientNullableRelationFilter");
+const ClientRelationFilter_1 = require("../inputs/ClientRelationFilter");
 const DateTimeFilter_1 = require("../inputs/DateTimeFilter");
 const DateTimeNullableFilter_1 = require("../inputs/DateTimeNullableFilter");
 const DocumentWhereInput_1 = require("../inputs/DocumentWhereInput");
@@ -71,10 +71,10 @@ tslib_1.__decorate([
     tslib_1.__metadata("design:type", DateTimeFilter_1.DateTimeFilter)
 ], DocumentWhereUniqueInput.prototype, "updatedAt", void 0);
 tslib_1.__decorate([
-    TypeGraphQL.Field(_type => ClientNullableRelationFilter_1.ClientNullableRelationFilter, {
+    TypeGraphQL.Field(_type => ClientRelationFilter_1.ClientRelationFilter, {
         nullable: true
     }),
-    tslib_1.__metadata("design:type", ClientNullableRelationFilter_1.ClientNullableRelationFilter)
+    tslib_1.__metadata("design:type", ClientRelationFilter_1.ClientRelationFilter)
 ], DocumentWhereUniqueInput.prototype, "client", void 0);
 exports.DocumentWhereUniqueInput = DocumentWhereUniqueInput = tslib_1.__decorate([
     TypeGraphQL.InputType("DocumentWhereUniqueInput", {})

@@ -5,5 +5,5 @@ export declare class AddressCreateManyInput {
     updatedAt?: Date | undefined;
     billing?: string | undefined;
     delivery?: string | undefined;
-    clientId?: string | undefined;
+    clientId: string;
 }

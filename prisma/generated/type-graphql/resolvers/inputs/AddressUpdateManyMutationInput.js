@@ -45,12 +45,6 @@ tslib_1.__decorate([
     }),
     tslib_1.__metadata("design:type", NullableStringFieldUpdateOperationsInput_1.NullableStringFieldUpdateOperationsInput)
 ], AddressUpdateManyMutationInput.prototype, "delivery", void 0);
-tslib_1.__decorate([
-    TypeGraphQL.Field(_type => NullableStringFieldUpdateOperationsInput_1.NullableStringFieldUpdateOperationsInput, {
-        nullable: true
-    }),
-    tslib_1.__metadata("design:type", NullableStringFieldUpdateOperationsInput_1.NullableStringFieldUpdateOperationsInput)
-], AddressUpdateManyMutationInput.prototype, "clientId", void 0);
 exports.AddressUpdateManyMutationInput = AddressUpdateManyMutationInput = tslib_1.__decorate([
     TypeGraphQL.InputType("AddressUpdateManyMutationInput", {})
 ], AddressUpdateManyMutationInput);

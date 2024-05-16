@@ -3,12 +3,13 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports.ClientWhereInput = void 0;
 const tslib_1 = require("tslib");
 const TypeGraphQL = tslib_1.__importStar(require("type-graphql"));
-const AddressRelationFilter_1 = require("../inputs/AddressRelationFilter");
+const AddressNullableRelationFilter_1 = require("../inputs/AddressNullableRelationFilter");
 const DateTimeFilter_1 = require("../inputs/DateTimeFilter");
 const DateTimeNullableFilter_1 = require("../inputs/DateTimeNullableFilter");
-const DocumentRelationFilter_1 = require("../inputs/DocumentRelationFilter");
+const DocumentNullableRelationFilter_1 = require("../inputs/DocumentNullableRelationFilter");
 const SaleListRelationFilter_1 = require("../inputs/SaleListRelationFilter");
 const StringFilter_1 = require("../inputs/StringFilter");
+const StringNullableFilter_1 = require("../inputs/StringNullableFilter");
 let ClientWhereInput = class ClientWhereInput {
 };
 exports.ClientWhereInput = ClientWhereInput;
@@ -67,28 +68,28 @@ tslib_1.__decorate([
     tslib_1.__metadata("design:type", StringFilter_1.StringFilter)
 ], ClientWhereInput.prototype, "email", void 0);
 tslib_1.__decorate([
-    TypeGraphQL.Field(_type => StringFilter_1.StringFilter, {
+    TypeGraphQL.Field(_type => StringNullableFilter_1.StringNullableFilter, {
         nullable: true
     }),
-    tslib_1.__metadata("design:type", StringFilter_1.StringFilter)
+    tslib_1.__metadata("design:type", StringNullableFilter_1.StringNullableFilter)
 ], ClientWhereInput.prototype, "documentId", void 0);
 tslib_1.__decorate([
-    TypeGraphQL.Field(_type => StringFilter_1.StringFilter, {
+    TypeGraphQL.Field(_type => StringNullableFilter_1.StringNullableFilter, {
         nullable: true
     }),
-    tslib_1.__metadata("design:type", StringFilter_1.StringFilter)
+    tslib_1.__metadata("design:type", StringNullableFilter_1.StringNullableFilter)
 ], ClientWhereInput.prototype, "addressId", void 0);
 tslib_1.__decorate([
-    TypeGraphQL.Field(_type => DocumentRelationFilter_1.DocumentRelationFilter, {
+    TypeGraphQL.Field(_type => DocumentNullableRelationFilter_1.DocumentNullableRelationFilter, {
         nullable: true
     }),
-    tslib_1.__metadata("design:type", DocumentRelationFilter_1.DocumentRelationFilter)
+    tslib_1.__metadata("design:type", DocumentNullableRelationFilter_1.DocumentNullableRelationFilter)
 ], ClientWhereInput.prototype, "document", void 0);
 tslib_1.__decorate([
-    TypeGraphQL.Field(_type => AddressRelationFilter_1.AddressRelationFilter, {
+    TypeGraphQL.Field(_type => AddressNullableRelationFilter_1.AddressNullableRelationFilter, {
         nullable: true
     }),
-    tslib_1.__metadata("design:type", AddressRelationFilter_1.AddressRelationFilter)
+    tslib_1.__metadata("design:type", AddressNullableRelationFilter_1.AddressNullableRelationFilter)
 ], ClientWhereInput.prototype, "address", void 0);
 tslib_1.__decorate([
     TypeGraphQL.Field(_type => SaleListRelationFilter_1.SaleListRelationFilter, {

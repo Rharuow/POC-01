@@ -9,8 +9,8 @@ export declare class ClientOrderByWithRelationInput {
     updatedAt?: "asc" | "desc" | undefined;
     name?: "asc" | "desc" | undefined;
     email?: "asc" | "desc" | undefined;
-    documentId?: "asc" | "desc" | undefined;
-    addressId?: "asc" | "desc" | undefined;
+    documentId?: SortOrderInput | undefined;
+    addressId?: SortOrderInput | undefined;
     document?: DocumentOrderByWithRelationInput | undefined;
     address?: AddressOrderByWithRelationInput | undefined;
     sales?: SaleOrderByRelationAggregateInput | undefined;

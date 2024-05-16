@@ -6,6 +6,5 @@ export declare class AddressCreateInput {
     updatedAt?: Date | undefined;
     billing?: string | undefined;
     delivery?: string | undefined;
-    clientId?: string | undefined;
-    client?: ClientCreateNestedOneWithoutAddressInput | undefined;
+    client: ClientCreateNestedOneWithoutAddressInput;
 }

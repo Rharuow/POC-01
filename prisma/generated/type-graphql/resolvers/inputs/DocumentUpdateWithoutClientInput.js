@@ -46,12 +46,6 @@ tslib_1.__decorate([
     }),
     tslib_1.__metadata("design:type", NullableStringFieldUpdateOperationsInput_1.NullableStringFieldUpdateOperationsInput)
 ], DocumentUpdateWithoutClientInput.prototype, "cnpj", void 0);
-tslib_1.__decorate([
-    TypeGraphQL.Field(_type => NullableStringFieldUpdateOperationsInput_1.NullableStringFieldUpdateOperationsInput, {
-        nullable: true
-    }),
-    tslib_1.__metadata("design:type", NullableStringFieldUpdateOperationsInput_1.NullableStringFieldUpdateOperationsInput)
-], DocumentUpdateWithoutClientInput.prototype, "clientId", void 0);
 exports.DocumentUpdateWithoutClientInput = DocumentUpdateWithoutClientInput = tslib_1.__decorate([
     TypeGraphQL.InputType("DocumentUpdateWithoutClientInput", {})
 ], DocumentUpdateWithoutClientInput);

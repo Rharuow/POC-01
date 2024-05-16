@@ -6,6 +6,6 @@ export declare class Document {
     updatedAt: Date;
     cpf?: string | null;
     cnpj?: string | null;
-    clientId?: string | null;
-    client?: Client | null;
+    clientId: string;
+    client?: Client;
 }

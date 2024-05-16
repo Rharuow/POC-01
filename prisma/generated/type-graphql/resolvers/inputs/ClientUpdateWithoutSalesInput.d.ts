@@ -1,7 +1,8 @@
-import { AddressUpdateOneRequiredWithoutClientNestedInput } from "../inputs/AddressUpdateOneRequiredWithoutClientNestedInput";
+import { AddressUpdateOneWithoutClientNestedInput } from "../inputs/AddressUpdateOneWithoutClientNestedInput";
 import { DateTimeFieldUpdateOperationsInput } from "../inputs/DateTimeFieldUpdateOperationsInput";
-import { DocumentUpdateOneRequiredWithoutClientNestedInput } from "../inputs/DocumentUpdateOneRequiredWithoutClientNestedInput";
+import { DocumentUpdateOneWithoutClientNestedInput } from "../inputs/DocumentUpdateOneWithoutClientNestedInput";
 import { NullableDateTimeFieldUpdateOperationsInput } from "../inputs/NullableDateTimeFieldUpdateOperationsInput";
+import { NullableStringFieldUpdateOperationsInput } from "../inputs/NullableStringFieldUpdateOperationsInput";
 import { StringFieldUpdateOperationsInput } from "../inputs/StringFieldUpdateOperationsInput";
 export declare class ClientUpdateWithoutSalesInput {
     id?: StringFieldUpdateOperationsInput | undefined;
@@ -10,6 +11,8 @@ export declare class ClientUpdateWithoutSalesInput {
     updatedAt?: DateTimeFieldUpdateOperationsInput | undefined;
     name?: StringFieldUpdateOperationsInput | undefined;
     email?: StringFieldUpdateOperationsInput | undefined;
-    document?: DocumentUpdateOneRequiredWithoutClientNestedInput | undefined;
-    address?: AddressUpdateOneRequiredWithoutClientNestedInput | undefined;
+    documentId?: NullableStringFieldUpdateOperationsInput | undefined;
+    addressId?: NullableStringFieldUpdateOperationsInput | undefined;
+    document?: DocumentUpdateOneWithoutClientNestedInput | undefined;
+    address?: AddressUpdateOneWithoutClientNestedInput | undefined;
 }

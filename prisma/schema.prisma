@@ -29,8 +29,8 @@ model Address {
   billing                 String? @unique
   delivery                String? @unique
 
-  clientId                String? @unique
-  client                  Client?
+  clientId                String @unique
+  client                  Client @relation(fields: [clientId], references: [id], onDelete: Cascade)
 }
 
 model Document {
@@ -42,8 +42,8 @@ model Document {
   cpf                     String? @unique
   cnpj                    String? @unique
 
-  clientId                String? @unique
-  client                  Client?
+  clientId                String @unique
+  client                  Client @relation(fields: [clientId], references: [id], onDelete: Cascade)
 }
 
 model Client {
@@ -55,11 +55,11 @@ model Client {
   name                    String 
   email                   String @unique
 
-  documentId              String @unique
-  document                Document @relation(fields: [documentId], references: [id], onDelete: Cascade)
+  documentId              String? @unique
+  document                Document?
 
-  addressId               String @unique
-  address                 Address @relation(fields: [addressId], references: [id], onDelete: Cascade)
+  addressId               String? @unique
+  address                 Address?
 
   sales                   Sale[]
 }

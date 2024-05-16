@@ -5,5 +5,4 @@ export declare class DocumentCreateWithoutClientInput {
     updatedAt?: Date | undefined;
     cpf?: string | undefined;
     cnpj?: string | undefined;
-    clientId?: string | undefined;
 }

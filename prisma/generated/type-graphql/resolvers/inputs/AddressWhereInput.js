@@ -3,7 +3,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports.AddressWhereInput = void 0;
 const tslib_1 = require("tslib");
 const TypeGraphQL = tslib_1.__importStar(require("type-graphql"));
-const ClientNullableRelationFilter_1 = require("../inputs/ClientNullableRelationFilter");
+const ClientRelationFilter_1 = require("../inputs/ClientRelationFilter");
 const DateTimeNullableFilter_1 = require("../inputs/DateTimeNullableFilter");
 const StringFilter_1 = require("../inputs/StringFilter");
 const StringNullableFilter_1 = require("../inputs/StringNullableFilter");
@@ -65,16 +65,16 @@ tslib_1.__decorate([
     tslib_1.__metadata("design:type", StringNullableFilter_1.StringNullableFilter)
 ], AddressWhereInput.prototype, "delivery", void 0);
 tslib_1.__decorate([
-    TypeGraphQL.Field(_type => StringNullableFilter_1.StringNullableFilter, {
+    TypeGraphQL.Field(_type => StringFilter_1.StringFilter, {
         nullable: true
     }),
-    tslib_1.__metadata("design:type", StringNullableFilter_1.StringNullableFilter)
+    tslib_1.__metadata("design:type", StringFilter_1.StringFilter)
 ], AddressWhereInput.prototype, "clientId", void 0);
 tslib_1.__decorate([
-    TypeGraphQL.Field(_type => ClientNullableRelationFilter_1.ClientNullableRelationFilter, {
+    TypeGraphQL.Field(_type => ClientRelationFilter_1.ClientRelationFilter, {
         nullable: true
     }),
-    tslib_1.__metadata("design:type", ClientNullableRelationFilter_1.ClientNullableRelationFilter)
+    tslib_1.__metadata("design:type", ClientRelationFilter_1.ClientRelationFilter)
 ], AddressWhereInput.prototype, "client", void 0);
 exports.AddressWhereInput = AddressWhereInput = tslib_1.__decorate([
     TypeGraphQL.InputType("AddressWhereInput", {})

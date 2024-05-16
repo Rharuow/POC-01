@@ -1,5 +1,6 @@
 import { DateTimeFieldUpdateOperationsInput } from "../inputs/DateTimeFieldUpdateOperationsInput";
 import { NullableDateTimeFieldUpdateOperationsInput } from "../inputs/NullableDateTimeFieldUpdateOperationsInput";
+import { NullableStringFieldUpdateOperationsInput } from "../inputs/NullableStringFieldUpdateOperationsInput";
 import { StringFieldUpdateOperationsInput } from "../inputs/StringFieldUpdateOperationsInput";
 export declare class ClientUpdateManyMutationInput {
     id?: StringFieldUpdateOperationsInput | undefined;
@@ -8,4 +9,6 @@ export declare class ClientUpdateManyMutationInput {
     updatedAt?: DateTimeFieldUpdateOperationsInput | undefined;
     name?: StringFieldUpdateOperationsInput | undefined;
     email?: StringFieldUpdateOperationsInput | undefined;
+    documentId?: NullableStringFieldUpdateOperationsInput | undefined;
+    addressId?: NullableStringFieldUpdateOperationsInput | undefined;
 }

@@ -7,6 +7,8 @@ export declare class ClientCreateWithoutAddressInput {
     updatedAt?: Date | undefined;
     name: string;
     email: string;
-    document: DocumentCreateNestedOneWithoutClientInput;
+    documentId?: string | undefined;
+    addressId?: string | undefined;
+    document?: DocumentCreateNestedOneWithoutClientInput | undefined;
     sales?: SaleCreateNestedManyWithoutClientInput | undefined;
 }

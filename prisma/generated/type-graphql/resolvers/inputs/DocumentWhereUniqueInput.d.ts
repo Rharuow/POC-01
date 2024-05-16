@@ -1,4 +1,4 @@
-import { ClientNullableRelationFilter } from "../inputs/ClientNullableRelationFilter";
+import { ClientRelationFilter } from "../inputs/ClientRelationFilter";
 import { DateTimeFilter } from "../inputs/DateTimeFilter";
 import { DateTimeNullableFilter } from "../inputs/DateTimeNullableFilter";
 import { DocumentWhereInput } from "../inputs/DocumentWhereInput";
@@ -13,5 +13,5 @@ export declare class DocumentWhereUniqueInput {
     createdAt?: DateTimeFilter | undefined;
     deletedAt?: DateTimeNullableFilter | undefined;
     updatedAt?: DateTimeFilter | undefined;
-    client?: ClientNullableRelationFilter | undefined;
+    client?: ClientRelationFilter | undefined;
 }

@@ -5,6 +5,6 @@ export declare class ClientCreateManyInput {
     updatedAt?: Date | undefined;
     name: string;
     email: string;
-    documentId: string;
-    addressId: string;
+    documentId?: string | undefined;
+    addressId?: string | undefined;
 }

@@ -1,4 +1,4 @@
-import { ClientUpdateOneWithoutAddressNestedInput } from "../inputs/ClientUpdateOneWithoutAddressNestedInput";
+import { ClientUpdateOneRequiredWithoutAddressNestedInput } from "../inputs/ClientUpdateOneRequiredWithoutAddressNestedInput";
 import { NullableDateTimeFieldUpdateOperationsInput } from "../inputs/NullableDateTimeFieldUpdateOperationsInput";
 import { NullableStringFieldUpdateOperationsInput } from "../inputs/NullableStringFieldUpdateOperationsInput";
 import { StringFieldUpdateOperationsInput } from "../inputs/StringFieldUpdateOperationsInput";
@@ -9,6 +9,5 @@ export declare class AddressUpdateInput {
     updatedAt?: NullableDateTimeFieldUpdateOperationsInput | undefined;
     billing?: NullableStringFieldUpdateOperationsInput | undefined;
     delivery?: NullableStringFieldUpdateOperationsInput | undefined;
-    clientId?: NullableStringFieldUpdateOperationsInput | undefined;
-    client?: ClientUpdateOneWithoutAddressNestedInput | undefined;
+    client?: ClientUpdateOneRequiredWithoutAddressNestedInput | undefined;
 }

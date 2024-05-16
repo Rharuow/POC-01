@@ -8,5 +8,4 @@ export declare class AddressUpdateManyMutationInput {
     updatedAt?: NullableDateTimeFieldUpdateOperationsInput | undefined;
     billing?: NullableStringFieldUpdateOperationsInput | undefined;
     delivery?: NullableStringFieldUpdateOperationsInput | undefined;
-    clientId?: NullableStringFieldUpdateOperationsInput | undefined;
 }

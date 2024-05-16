@@ -1,8 +1,8 @@
-import { AddressRelationFilter } from "../inputs/AddressRelationFilter";
+import { AddressNullableRelationFilter } from "../inputs/AddressNullableRelationFilter";
 import { ClientWhereInput } from "../inputs/ClientWhereInput";
 import { DateTimeFilter } from "../inputs/DateTimeFilter";
 import { DateTimeNullableFilter } from "../inputs/DateTimeNullableFilter";
-import { DocumentRelationFilter } from "../inputs/DocumentRelationFilter";
+import { DocumentNullableRelationFilter } from "../inputs/DocumentNullableRelationFilter";
 import { SaleListRelationFilter } from "../inputs/SaleListRelationFilter";
 import { StringFilter } from "../inputs/StringFilter";
 export declare class ClientWhereUniqueInput {
@@ -17,7 +17,7 @@ export declare class ClientWhereUniqueInput {
     deletedAt?: DateTimeNullableFilter | undefined;
     updatedAt?: DateTimeFilter | undefined;
     name?: StringFilter | undefined;
-    document?: DocumentRelationFilter | undefined;
-    address?: AddressRelationFilter | undefined;
+    document?: DocumentNullableRelationFilter | undefined;
+    address?: AddressNullableRelationFilter | undefined;
     sales?: SaleListRelationFilter | undefined;
 }

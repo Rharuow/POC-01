@@ -9,7 +9,7 @@ export declare class AddressOrderByWithAggregationInput {
     updatedAt?: SortOrderInput | undefined;
     billing?: SortOrderInput | undefined;
     delivery?: SortOrderInput | undefined;
-    clientId?: SortOrderInput | undefined;
+    clientId?: "asc" | "desc" | undefined;
     _count?: AddressCountOrderByAggregateInput | undefined;
     _max?: AddressMaxOrderByAggregateInput | undefined;
     _min?: AddressMinOrderByAggregateInput | undefined;

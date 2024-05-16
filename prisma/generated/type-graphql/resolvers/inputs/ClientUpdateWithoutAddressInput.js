@@ -4,8 +4,9 @@ exports.ClientUpdateWithoutAddressInput = void 0;
 const tslib_1 = require("tslib");
 const TypeGraphQL = tslib_1.__importStar(require("type-graphql"));
 const DateTimeFieldUpdateOperationsInput_1 = require("../inputs/DateTimeFieldUpdateOperationsInput");
-const DocumentUpdateOneRequiredWithoutClientNestedInput_1 = require("../inputs/DocumentUpdateOneRequiredWithoutClientNestedInput");
+const DocumentUpdateOneWithoutClientNestedInput_1 = require("../inputs/DocumentUpdateOneWithoutClientNestedInput");
 const NullableDateTimeFieldUpdateOperationsInput_1 = require("../inputs/NullableDateTimeFieldUpdateOperationsInput");
+const NullableStringFieldUpdateOperationsInput_1 = require("../inputs/NullableStringFieldUpdateOperationsInput");
 const SaleUpdateManyWithoutClientNestedInput_1 = require("../inputs/SaleUpdateManyWithoutClientNestedInput");
 const StringFieldUpdateOperationsInput_1 = require("../inputs/StringFieldUpdateOperationsInput");
 let ClientUpdateWithoutAddressInput = class ClientUpdateWithoutAddressInput {
@@ -48,10 +49,22 @@ tslib_1.__decorate([
     tslib_1.__metadata("design:type", StringFieldUpdateOperationsInput_1.StringFieldUpdateOperationsInput)
 ], ClientUpdateWithoutAddressInput.prototype, "email", void 0);
 tslib_1.__decorate([
-    TypeGraphQL.Field(_type => DocumentUpdateOneRequiredWithoutClientNestedInput_1.DocumentUpdateOneRequiredWithoutClientNestedInput, {
+    TypeGraphQL.Field(_type => NullableStringFieldUpdateOperationsInput_1.NullableStringFieldUpdateOperationsInput, {
         nullable: true
     }),
-    tslib_1.__metadata("design:type", DocumentUpdateOneRequiredWithoutClientNestedInput_1.DocumentUpdateOneRequiredWithoutClientNestedInput)
+    tslib_1.__metadata("design:type", NullableStringFieldUpdateOperationsInput_1.NullableStringFieldUpdateOperationsInput)
+], ClientUpdateWithoutAddressInput.prototype, "documentId", void 0);
+tslib_1.__decorate([
+    TypeGraphQL.Field(_type => NullableStringFieldUpdateOperationsInput_1.NullableStringFieldUpdateOperationsInput, {
+        nullable: true
+    }),
+    tslib_1.__metadata("design:type", NullableStringFieldUpdateOperationsInput_1.NullableStringFieldUpdateOperationsInput)
+], ClientUpdateWithoutAddressInput.prototype, "addressId", void 0);
+tslib_1.__decorate([
+    TypeGraphQL.Field(_type => DocumentUpdateOneWithoutClientNestedInput_1.DocumentUpdateOneWithoutClientNestedInput, {
+        nullable: true
+    }),
+    tslib_1.__metadata("design:type", DocumentUpdateOneWithoutClientNestedInput_1.DocumentUpdateOneWithoutClientNestedInput)
 ], ClientUpdateWithoutAddressInput.prototype, "document", void 0);
 tslib_1.__decorate([
     TypeGraphQL.Field(_type => SaleUpdateManyWithoutClientNestedInput_1.SaleUpdateManyWithoutClientNestedInput, {

@@ -48,16 +48,16 @@ tslib_1.__decorate([
     tslib_1.__metadata("design:type", String)
 ], ClientOrderByWithAggregationInput.prototype, "email", void 0);
 tslib_1.__decorate([
-    TypeGraphQL.Field(_type => SortOrder_1.SortOrder, {
+    TypeGraphQL.Field(_type => SortOrderInput_1.SortOrderInput, {
         nullable: true
     }),
-    tslib_1.__metadata("design:type", String)
+    tslib_1.__metadata("design:type", SortOrderInput_1.SortOrderInput)
 ], ClientOrderByWithAggregationInput.prototype, "documentId", void 0);
 tslib_1.__decorate([
-    TypeGraphQL.Field(_type => SortOrder_1.SortOrder, {
+    TypeGraphQL.Field(_type => SortOrderInput_1.SortOrderInput, {
         nullable: true
     }),
-    tslib_1.__metadata("design:type", String)
+    tslib_1.__metadata("design:type", SortOrderInput_1.SortOrderInput)
 ], ClientOrderByWithAggregationInput.prototype, "addressId", void 0);
 tslib_1.__decorate([
     TypeGraphQL.Field(_type => ClientCountOrderByAggregateInput_1.ClientCountOrderByAggregateInput, {

@@ -44,14 +44,8 @@ tslib_1.__decorate([
     tslib_1.__metadata("design:type", String)
 ], DocumentCreateInput.prototype, "cnpj", void 0);
 tslib_1.__decorate([
-    TypeGraphQL.Field(_type => String, {
-        nullable: true
-    }),
-    tslib_1.__metadata("design:type", String)
-], DocumentCreateInput.prototype, "clientId", void 0);
-tslib_1.__decorate([
     TypeGraphQL.Field(_type => ClientCreateNestedOneWithoutDocumentInput_1.ClientCreateNestedOneWithoutDocumentInput, {
-        nullable: true
+        nullable: false
     }),
     tslib_1.__metadata("design:type", ClientCreateNestedOneWithoutDocumentInput_1.ClientCreateNestedOneWithoutDocumentInput)
 ], DocumentCreateInput.prototype, "client", void 0);

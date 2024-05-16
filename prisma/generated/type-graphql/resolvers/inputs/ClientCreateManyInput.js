@@ -44,13 +44,13 @@ tslib_1.__decorate([
 ], ClientCreateManyInput.prototype, "email", void 0);
 tslib_1.__decorate([
     TypeGraphQL.Field(_type => String, {
-        nullable: false
+        nullable: true
     }),
     tslib_1.__metadata("design:type", String)
 ], ClientCreateManyInput.prototype, "documentId", void 0);
 tslib_1.__decorate([
     TypeGraphQL.Field(_type => String, {
-        nullable: false
+        nullable: true
     }),
     tslib_1.__metadata("design:type", String)
 ], ClientCreateManyInput.prototype, "addressId", void 0);

@@ -1,5 +1,5 @@
 import { DocumentWhereInput } from "../inputs/DocumentWhereInput";
-export declare class DocumentRelationFilter {
+export declare class DocumentNullableRelationFilter {
     is?: DocumentWhereInput | undefined;
     isNot?: DocumentWhereInput | undefined;
 }

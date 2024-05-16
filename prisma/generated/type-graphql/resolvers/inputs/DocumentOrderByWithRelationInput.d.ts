@@ -7,6 +7,6 @@ export declare class DocumentOrderByWithRelationInput {
     updatedAt?: "asc" | "desc" | undefined;
     cpf?: SortOrderInput | undefined;
     cnpj?: SortOrderInput | undefined;
-    clientId?: SortOrderInput | undefined;
+    clientId?: "asc" | "desc" | undefined;
     client?: ClientOrderByWithRelationInput | undefined;
 }

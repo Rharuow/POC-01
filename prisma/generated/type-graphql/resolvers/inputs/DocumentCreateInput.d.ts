@@ -6,6 +6,5 @@ export declare class DocumentCreateInput {
     updatedAt?: Date | undefined;
     cpf?: string | undefined;
     cnpj?: string | undefined;
-    clientId?: string | undefined;
-    client?: ClientCreateNestedOneWithoutDocumentInput | undefined;
+    client: ClientCreateNestedOneWithoutDocumentInput;
 }

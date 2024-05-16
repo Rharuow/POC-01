@@ -9,8 +9,8 @@ export declare class ClientOrderByWithAggregationInput {
     updatedAt?: "asc" | "desc" | undefined;
     name?: "asc" | "desc" | undefined;
     email?: "asc" | "desc" | undefined;
-    documentId?: "asc" | "desc" | undefined;
-    addressId?: "asc" | "desc" | undefined;
+    documentId?: SortOrderInput | undefined;
+    addressId?: SortOrderInput | undefined;
     _count?: ClientCountOrderByAggregateInput | undefined;
     _max?: ClientMaxOrderByAggregateInput | undefined;
     _min?: ClientMinOrderByAggregateInput | undefined;

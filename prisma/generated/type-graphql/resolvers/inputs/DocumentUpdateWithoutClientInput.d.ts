@@ -9,5 +9,4 @@ export declare class DocumentUpdateWithoutClientInput {
     updatedAt?: DateTimeFieldUpdateOperationsInput | undefined;
     cpf?: NullableStringFieldUpdateOperationsInput | undefined;
     cnpj?: NullableStringFieldUpdateOperationsInput | undefined;
-    clientId?: NullableStringFieldUpdateOperationsInput | undefined;
 }

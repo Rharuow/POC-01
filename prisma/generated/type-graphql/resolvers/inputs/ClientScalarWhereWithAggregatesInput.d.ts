@@ -1,5 +1,6 @@
 import { DateTimeNullableWithAggregatesFilter } from "../inputs/DateTimeNullableWithAggregatesFilter";
 import { DateTimeWithAggregatesFilter } from "../inputs/DateTimeWithAggregatesFilter";
+import { StringNullableWithAggregatesFilter } from "../inputs/StringNullableWithAggregatesFilter";
 import { StringWithAggregatesFilter } from "../inputs/StringWithAggregatesFilter";
 export declare class ClientScalarWhereWithAggregatesInput {
     AND?: ClientScalarWhereWithAggregatesInput[] | undefined;
@@ -11,6 +12,6 @@ export declare class ClientScalarWhereWithAggregatesInput {
     updatedAt?: DateTimeWithAggregatesFilter | undefined;
     name?: StringWithAggregatesFilter | undefined;
     email?: StringWithAggregatesFilter | undefined;
-    documentId?: StringWithAggregatesFilter | undefined;
-    addressId?: StringWithAggregatesFilter | undefined;
+    documentId?: StringNullableWithAggregatesFilter | undefined;
+    addressId?: StringNullableWithAggregatesFilter | undefined;
 }

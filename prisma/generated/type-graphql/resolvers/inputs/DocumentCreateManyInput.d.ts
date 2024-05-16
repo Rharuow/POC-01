@@ -5,5 +5,5 @@ export declare class DocumentCreateManyInput {
     updatedAt?: Date | undefined;
     cpf?: string | undefined;
     cnpj?: string | undefined;
-    clientId?: string | undefined;
+    clientId: string;
 }

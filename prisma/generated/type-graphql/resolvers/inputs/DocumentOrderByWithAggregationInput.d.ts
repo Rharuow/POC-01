@@ -9,7 +9,7 @@ export declare class DocumentOrderByWithAggregationInput {
     updatedAt?: "asc" | "desc" | undefined;
     cpf?: SortOrderInput | undefined;
     cnpj?: SortOrderInput | undefined;
-    clientId?: SortOrderInput | undefined;
+    clientId?: "asc" | "desc" | undefined;
     _count?: DocumentCountOrderByAggregateInput | undefined;
     _max?: DocumentMaxOrderByAggregateInput | undefined;
     _min?: DocumentMinOrderByAggregateInput | undefined;

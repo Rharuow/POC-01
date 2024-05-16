@@ -9,7 +9,7 @@ let CreateOneAddressArgs = class CreateOneAddressArgs {
 exports.CreateOneAddressArgs = CreateOneAddressArgs;
 tslib_1.__decorate([
     TypeGraphQL.Field(_type => AddressCreateInput_1.AddressCreateInput, {
-        nullable: true
+        nullable: false
     }),
     tslib_1.__metadata("design:type", AddressCreateInput_1.AddressCreateInput)
 ], CreateOneAddressArgs.prototype, "data", void 0);

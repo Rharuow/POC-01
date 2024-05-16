@@ -11,5 +11,5 @@ export declare class AddressScalarWhereWithAggregatesInput {
     updatedAt?: DateTimeNullableWithAggregatesFilter | undefined;
     billing?: StringNullableWithAggregatesFilter | undefined;
     delivery?: StringNullableWithAggregatesFilter | undefined;
-    clientId?: StringNullableWithAggregatesFilter | undefined;
+    clientId?: StringWithAggregatesFilter | undefined;
 }

@@ -12,5 +12,5 @@ export declare class DocumentScalarWhereWithAggregatesInput {
     updatedAt?: DateTimeWithAggregatesFilter | undefined;
     cpf?: StringNullableWithAggregatesFilter | undefined;
     cnpj?: StringNullableWithAggregatesFilter | undefined;
-    clientId?: StringNullableWithAggregatesFilter | undefined;
+    clientId?: StringWithAggregatesFilter | undefined;
 }

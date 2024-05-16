@@ -46,14 +46,26 @@ tslib_1.__decorate([
     tslib_1.__metadata("design:type", String)
 ], ClientCreateInput.prototype, "email", void 0);
 tslib_1.__decorate([
+    TypeGraphQL.Field(_type => String, {
+        nullable: true
+    }),
+    tslib_1.__metadata("design:type", String)
+], ClientCreateInput.prototype, "documentId", void 0);
+tslib_1.__decorate([
+    TypeGraphQL.Field(_type => String, {
+        nullable: true
+    }),
+    tslib_1.__metadata("design:type", String)
+], ClientCreateInput.prototype, "addressId", void 0);
+tslib_1.__decorate([
     TypeGraphQL.Field(_type => DocumentCreateNestedOneWithoutClientInput_1.DocumentCreateNestedOneWithoutClientInput, {
-        nullable: false
+        nullable: true
     }),
     tslib_1.__metadata("design:type", DocumentCreateNestedOneWithoutClientInput_1.DocumentCreateNestedOneWithoutClientInput)
 ], ClientCreateInput.prototype, "document", void 0);
 tslib_1.__decorate([
     TypeGraphQL.Field(_type => AddressCreateNestedOneWithoutClientInput_1.AddressCreateNestedOneWithoutClientInput, {
-        nullable: false
+        nullable: true
     }),
     tslib_1.__metadata("design:type", AddressCreateNestedOneWithoutClientInput_1.AddressCreateNestedOneWithoutClientInput)
 ], ClientCreateInput.prototype, "address", void 0);

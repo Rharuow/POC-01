@@ -8,8 +8,8 @@ export declare class ClientGroupBy {
     updatedAt: Date;
     name: string;
     email: string;
-    documentId: string;
-    addressId: string;
+    documentId: string | null;
+    addressId: string | null;
     _count: ClientCountAggregate | null;
     _min: ClientMinAggregate | null;
     _max: ClientMaxAggregate | null;

@@ -1,4 +1,4 @@
-import { ClientNullableRelationFilter } from "../inputs/ClientNullableRelationFilter";
+import { ClientRelationFilter } from "../inputs/ClientRelationFilter";
 import { DateTimeFilter } from "../inputs/DateTimeFilter";
 import { DateTimeNullableFilter } from "../inputs/DateTimeNullableFilter";
 import { StringFilter } from "../inputs/StringFilter";
@@ -13,6 +13,6 @@ export declare class DocumentWhereInput {
     updatedAt?: DateTimeFilter | undefined;
     cpf?: StringNullableFilter | undefined;
     cnpj?: StringNullableFilter | undefined;
-    clientId?: StringNullableFilter | undefined;
-    client?: ClientNullableRelationFilter | undefined;
+    clientId?: StringFilter | undefined;
+    client?: ClientRelationFilter | undefined;
 }

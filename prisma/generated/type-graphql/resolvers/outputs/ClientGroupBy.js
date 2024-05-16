@@ -47,13 +47,13 @@ tslib_1.__decorate([
 ], ClientGroupBy.prototype, "email", void 0);
 tslib_1.__decorate([
     TypeGraphQL.Field(_type => String, {
-        nullable: false
+        nullable: true
     }),
     tslib_1.__metadata("design:type", String)
 ], ClientGroupBy.prototype, "documentId", void 0);
 tslib_1.__decorate([
     TypeGraphQL.Field(_type => String, {
-        nullable: false
+        nullable: true
     }),
     tslib_1.__metadata("design:type", String)
 ], ClientGroupBy.prototype, "addressId", void 0);

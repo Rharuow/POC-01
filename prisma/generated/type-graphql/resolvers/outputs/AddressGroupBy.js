@@ -47,7 +47,7 @@ tslib_1.__decorate([
 ], AddressGroupBy.prototype, "delivery", void 0);
 tslib_1.__decorate([
     TypeGraphQL.Field(_type => String, {
-        nullable: true
+        nullable: false
     }),
     tslib_1.__metadata("design:type", String)
 ], AddressGroupBy.prototype, "clientId", void 0);

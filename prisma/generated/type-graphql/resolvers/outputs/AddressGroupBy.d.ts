@@ -8,7 +8,7 @@ export declare class AddressGroupBy {
     updatedAt: Date | null;
     billing: string | null;
     delivery: string | null;
-    clientId: string | null;
+    clientId: string;
     _count: AddressCountAggregate | null;
     _min: AddressMinAggregate | null;
     _max: AddressMaxAggregate | null;

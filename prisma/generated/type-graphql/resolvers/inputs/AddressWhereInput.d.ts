@@ -1,4 +1,4 @@
-import { ClientNullableRelationFilter } from "../inputs/ClientNullableRelationFilter";
+import { ClientRelationFilter } from "../inputs/ClientRelationFilter";
 import { DateTimeNullableFilter } from "../inputs/DateTimeNullableFilter";
 import { StringFilter } from "../inputs/StringFilter";
 import { StringNullableFilter } from "../inputs/StringNullableFilter";
@@ -12,6 +12,6 @@ export declare class AddressWhereInput {
     updatedAt?: DateTimeNullableFilter | undefined;
     billing?: StringNullableFilter | undefined;
     delivery?: StringNullableFilter | undefined;
-    clientId?: StringNullableFilter | undefined;
-    client?: ClientNullableRelationFilter | undefined;
+    clientId?: StringFilter | undefined;
+    client?: ClientRelationFilter | undefined;
 }

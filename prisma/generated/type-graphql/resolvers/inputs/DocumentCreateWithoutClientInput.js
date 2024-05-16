@@ -42,12 +42,6 @@ tslib_1.__decorate([
     }),
     tslib_1.__metadata("design:type", String)
 ], DocumentCreateWithoutClientInput.prototype, "cnpj", void 0);
-tslib_1.__decorate([
-    TypeGraphQL.Field(_type => String, {
-        nullable: true
-    }),
-    tslib_1.__metadata("design:type", String)
-], DocumentCreateWithoutClientInput.prototype, "clientId", void 0);
 exports.DocumentCreateWithoutClientInput = DocumentCreateWithoutClientInput = tslib_1.__decorate([
     TypeGraphQL.InputType("DocumentCreateWithoutClientInput", {})
 ], DocumentCreateWithoutClientInput);

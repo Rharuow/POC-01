@@ -1,5 +1,5 @@
 import { AddressWhereInput } from "../inputs/AddressWhereInput";
-import { ClientNullableRelationFilter } from "../inputs/ClientNullableRelationFilter";
+import { ClientRelationFilter } from "../inputs/ClientRelationFilter";
 import { DateTimeNullableFilter } from "../inputs/DateTimeNullableFilter";
 export declare class AddressWhereUniqueInput {
     id?: string | undefined;
@@ -12,5 +12,5 @@ export declare class AddressWhereUniqueInput {
     createdAt?: DateTimeNullableFilter | undefined;
     deletedAt?: DateTimeNullableFilter | undefined;
     updatedAt?: DateTimeNullableFilter | undefined;
-    client?: ClientNullableRelationFilter | undefined;
+    client?: ClientRelationFilter | undefined;
 }

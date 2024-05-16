@@ -8,7 +8,7 @@ export declare class DocumentGroupBy {
     updatedAt: Date;
     cpf: string | null;
     cnpj: string | null;
-    clientId: string | null;
+    clientId: string;
     _count: DocumentCountAggregate | null;
     _min: DocumentMinAggregate | null;
     _max: DocumentMaxAggregate | null;

@@ -9,5 +9,4 @@ export declare class DocumentUpdateManyMutationInput {
     updatedAt?: DateTimeFieldUpdateOperationsInput | undefined;
     cpf?: NullableStringFieldUpdateOperationsInput | undefined;
     cnpj?: NullableStringFieldUpdateOperationsInput | undefined;
-    clientId?: NullableStringFieldUpdateOperationsInput | undefined;
 }

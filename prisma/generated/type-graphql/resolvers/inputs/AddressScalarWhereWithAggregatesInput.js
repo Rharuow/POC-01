@@ -64,10 +64,10 @@ tslib_1.__decorate([
     tslib_1.__metadata("design:type", StringNullableWithAggregatesFilter_1.StringNullableWithAggregatesFilter)
 ], AddressScalarWhereWithAggregatesInput.prototype, "delivery", void 0);
 tslib_1.__decorate([
-    TypeGraphQL.Field(_type => StringNullableWithAggregatesFilter_1.StringNullableWithAggregatesFilter, {
+    TypeGraphQL.Field(_type => StringWithAggregatesFilter_1.StringWithAggregatesFilter, {
         nullable: true
     }),
-    tslib_1.__metadata("design:type", StringNullableWithAggregatesFilter_1.StringNullableWithAggregatesFilter)
+    tslib_1.__metadata("design:type", StringWithAggregatesFilter_1.StringWithAggregatesFilter)
 ], AddressScalarWhereWithAggregatesInput.prototype, "clientId", void 0);
 exports.AddressScalarWhereWithAggregatesInput = AddressScalarWhereWithAggregatesInput = tslib_1.__decorate([
     TypeGraphQL.InputType("AddressScalarWhereWithAggregatesInput", {})

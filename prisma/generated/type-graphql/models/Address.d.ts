@@ -6,6 +6,6 @@ export declare class Address {
     updatedAt?: Date | null;
     billing?: string | null;
     delivery?: string | null;
-    clientId?: string | null;
-    client?: Client | null;
+    clientId: string;
+    client?: Client;
 }

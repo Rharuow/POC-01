@@ -9,10 +9,10 @@ export declare class Client {
     updatedAt: Date;
     name: string;
     email: string;
-    documentId: string;
-    document?: Document;
-    addressId: string;
-    address?: Address;
+    documentId?: string | null;
+    document?: Document | null;
+    addressId?: string | null;
+    address?: Address | null;
     sales?: Sale[];
     _count?: ClientCount | null;
 }

@@ -7,6 +7,6 @@ export declare class AddressOrderByWithRelationInput {
     updatedAt?: SortOrderInput | undefined;
     billing?: SortOrderInput | undefined;
     delivery?: SortOrderInput | undefined;
-    clientId?: SortOrderInput | undefined;
+    clientId?: "asc" | "desc" | undefined;
     client?: ClientOrderByWithRelationInput | undefined;
 }
