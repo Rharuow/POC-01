@@ -1,4 +1,4 @@
-import { CategoryUpdateManyWithoutProdutosNestedInput } from "../inputs/CategoryUpdateManyWithoutProdutosNestedInput";
+import { CategoriesProductsUpdateManyWithoutProductNestedInput } from "../inputs/CategoriesProductsUpdateManyWithoutProductNestedInput";
 import { DateTimeFieldUpdateOperationsInput } from "../inputs/DateTimeFieldUpdateOperationsInput";
 import { IntFieldUpdateOperationsInput } from "../inputs/IntFieldUpdateOperationsInput";
 import { NullableDateTimeFieldUpdateOperationsInput } from "../inputs/NullableDateTimeFieldUpdateOperationsInput";
@@ -12,6 +12,6 @@ export declare class ProductUpdateInput {
     name?: StringFieldUpdateOperationsInput | undefined;
     description?: StringFieldUpdateOperationsInput | undefined;
     inventory_quantity?: IntFieldUpdateOperationsInput | undefined;
-    categories?: CategoryUpdateManyWithoutProdutosNestedInput | undefined;
+    categories?: CategoriesProductsUpdateManyWithoutProductNestedInput | undefined;
     orders?: OrderUpdateManyWithoutProductNestedInput | undefined;
 }

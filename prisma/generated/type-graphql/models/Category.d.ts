@@ -1,4 +1,4 @@
-import { Product } from "../models/Product";
+import { CategoriesProducts } from "../models/CategoriesProducts";
 import { CategoryCount } from "../resolvers/outputs/CategoryCount";
 export declare class Category {
     id: string;
@@ -6,6 +6,6 @@ export declare class Category {
     deletedAt?: Date | null;
     updatedAt: Date;
     name: string;
-    produtos?: Product[];
+    produtos?: CategoriesProducts[];
     _count?: CategoryCount | null;
 }

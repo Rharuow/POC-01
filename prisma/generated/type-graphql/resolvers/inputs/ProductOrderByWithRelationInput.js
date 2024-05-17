@@ -3,7 +3,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports.ProductOrderByWithRelationInput = void 0;
 const tslib_1 = require("tslib");
 const TypeGraphQL = tslib_1.__importStar(require("type-graphql"));
-const CategoryOrderByRelationAggregateInput_1 = require("../inputs/CategoryOrderByRelationAggregateInput");
+const CategoriesProductsOrderByRelationAggregateInput_1 = require("../inputs/CategoriesProductsOrderByRelationAggregateInput");
 const OrderOrderByRelationAggregateInput_1 = require("../inputs/OrderOrderByRelationAggregateInput");
 const SortOrderInput_1 = require("../inputs/SortOrderInput");
 const SortOrder_1 = require("../../enums/SortOrder");
@@ -53,10 +53,10 @@ tslib_1.__decorate([
     tslib_1.__metadata("design:type", String)
 ], ProductOrderByWithRelationInput.prototype, "inventory_quantity", void 0);
 tslib_1.__decorate([
-    TypeGraphQL.Field(_type => CategoryOrderByRelationAggregateInput_1.CategoryOrderByRelationAggregateInput, {
+    TypeGraphQL.Field(_type => CategoriesProductsOrderByRelationAggregateInput_1.CategoriesProductsOrderByRelationAggregateInput, {
         nullable: true
     }),
-    tslib_1.__metadata("design:type", CategoryOrderByRelationAggregateInput_1.CategoryOrderByRelationAggregateInput)
+    tslib_1.__metadata("design:type", CategoriesProductsOrderByRelationAggregateInput_1.CategoriesProductsOrderByRelationAggregateInput)
 ], ProductOrderByWithRelationInput.prototype, "categories", void 0);
 tslib_1.__decorate([
     TypeGraphQL.Field(_type => OrderOrderByRelationAggregateInput_1.OrderOrderByRelationAggregateInput, {

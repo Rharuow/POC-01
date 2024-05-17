@@ -3,7 +3,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports.ProductUpdateInput = void 0;
 const tslib_1 = require("tslib");
 const TypeGraphQL = tslib_1.__importStar(require("type-graphql"));
-const CategoryUpdateManyWithoutProdutosNestedInput_1 = require("../inputs/CategoryUpdateManyWithoutProdutosNestedInput");
+const CategoriesProductsUpdateManyWithoutProductNestedInput_1 = require("../inputs/CategoriesProductsUpdateManyWithoutProductNestedInput");
 const DateTimeFieldUpdateOperationsInput_1 = require("../inputs/DateTimeFieldUpdateOperationsInput");
 const IntFieldUpdateOperationsInput_1 = require("../inputs/IntFieldUpdateOperationsInput");
 const NullableDateTimeFieldUpdateOperationsInput_1 = require("../inputs/NullableDateTimeFieldUpdateOperationsInput");
@@ -55,10 +55,10 @@ tslib_1.__decorate([
     tslib_1.__metadata("design:type", IntFieldUpdateOperationsInput_1.IntFieldUpdateOperationsInput)
 ], ProductUpdateInput.prototype, "inventory_quantity", void 0);
 tslib_1.__decorate([
-    TypeGraphQL.Field(_type => CategoryUpdateManyWithoutProdutosNestedInput_1.CategoryUpdateManyWithoutProdutosNestedInput, {
+    TypeGraphQL.Field(_type => CategoriesProductsUpdateManyWithoutProductNestedInput_1.CategoriesProductsUpdateManyWithoutProductNestedInput, {
         nullable: true
     }),
-    tslib_1.__metadata("design:type", CategoryUpdateManyWithoutProdutosNestedInput_1.CategoryUpdateManyWithoutProdutosNestedInput)
+    tslib_1.__metadata("design:type", CategoriesProductsUpdateManyWithoutProductNestedInput_1.CategoriesProductsUpdateManyWithoutProductNestedInput)
 ], ProductUpdateInput.prototype, "categories", void 0);
 tslib_1.__decorate([
     TypeGraphQL.Field(_type => OrderUpdateManyWithoutProductNestedInput_1.OrderUpdateManyWithoutProductNestedInput, {

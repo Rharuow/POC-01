@@ -1,4 +1,4 @@
-import { CategoryOrderByRelationAggregateInput } from "../inputs/CategoryOrderByRelationAggregateInput";
+import { CategoriesProductsOrderByRelationAggregateInput } from "../inputs/CategoriesProductsOrderByRelationAggregateInput";
 import { OrderOrderByRelationAggregateInput } from "../inputs/OrderOrderByRelationAggregateInput";
 import { SortOrderInput } from "../inputs/SortOrderInput";
 export declare class ProductOrderByWithRelationInput {
@@ -9,6 +9,6 @@ export declare class ProductOrderByWithRelationInput {
     name?: "asc" | "desc" | undefined;
     description?: "asc" | "desc" | undefined;
     inventory_quantity?: "asc" | "desc" | undefined;
-    categories?: CategoryOrderByRelationAggregateInput | undefined;
+    categories?: CategoriesProductsOrderByRelationAggregateInput | undefined;
     orders?: OrderOrderByRelationAggregateInput | undefined;
 }

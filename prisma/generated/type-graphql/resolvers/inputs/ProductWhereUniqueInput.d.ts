@@ -1,4 +1,4 @@
-import { CategoryListRelationFilter } from "../inputs/CategoryListRelationFilter";
+import { CategoriesProductsListRelationFilter } from "../inputs/CategoriesProductsListRelationFilter";
 import { DateTimeFilter } from "../inputs/DateTimeFilter";
 import { DateTimeNullableFilter } from "../inputs/DateTimeNullableFilter";
 import { IntFilter } from "../inputs/IntFilter";
@@ -16,6 +16,6 @@ export declare class ProductWhereUniqueInput {
     updatedAt?: DateTimeFilter | undefined;
     description?: StringFilter | undefined;
     inventory_quantity?: IntFilter | undefined;
-    categories?: CategoryListRelationFilter | undefined;
+    categories?: CategoriesProductsListRelationFilter | undefined;
     orders?: OrderListRelationFilter | undefined;
 }

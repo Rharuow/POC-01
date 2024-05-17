@@ -1,4 +1,4 @@
-import { CategoryWhereInput } from "../../inputs/CategoryWhereInput";
+import { CategoriesProductsWhereInput } from "../../inputs/CategoriesProductsWhereInput";
 export declare class ProductCountCategoriesArgs {
-    where?: CategoryWhereInput | undefined;
+    where?: CategoriesProductsWhereInput | undefined;
 }

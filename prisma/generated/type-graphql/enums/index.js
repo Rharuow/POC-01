@@ -1,8 +1,10 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.TransactionIsolationLevel = exports.SortOrder = exports.SaleScalarFieldEnum = exports.QueryMode = exports.ProductScalarFieldEnum = exports.OrderScalarFieldEnum = exports.NullsOrder = exports.DocumentScalarFieldEnum = exports.ClientScalarFieldEnum = exports.CategoryScalarFieldEnum = exports.AddressScalarFieldEnum = void 0;
+exports.TransactionIsolationLevel = exports.SortOrder = exports.SaleScalarFieldEnum = exports.QueryMode = exports.ProductScalarFieldEnum = exports.OrderScalarFieldEnum = exports.NullsOrder = exports.DocumentScalarFieldEnum = exports.ClientScalarFieldEnum = exports.CategoryScalarFieldEnum = exports.CategoriesProductsScalarFieldEnum = exports.AddressScalarFieldEnum = void 0;
 var AddressScalarFieldEnum_1 = require("./AddressScalarFieldEnum");
 Object.defineProperty(exports, "AddressScalarFieldEnum", { enumerable: true, get: function () { return AddressScalarFieldEnum_1.AddressScalarFieldEnum; } });
+var CategoriesProductsScalarFieldEnum_1 = require("./CategoriesProductsScalarFieldEnum");
+Object.defineProperty(exports, "CategoriesProductsScalarFieldEnum", { enumerable: true, get: function () { return CategoriesProductsScalarFieldEnum_1.CategoriesProductsScalarFieldEnum; } });
 var CategoryScalarFieldEnum_1 = require("./CategoryScalarFieldEnum");
 Object.defineProperty(exports, "CategoryScalarFieldEnum", { enumerable: true, get: function () { return CategoryScalarFieldEnum_1.CategoryScalarFieldEnum; } });
 var ClientScalarFieldEnum_1 = require("./ClientScalarFieldEnum");

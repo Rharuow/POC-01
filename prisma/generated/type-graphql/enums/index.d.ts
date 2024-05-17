@@ -1,4 +1,5 @@
 export { AddressScalarFieldEnum } from "./AddressScalarFieldEnum";
+export { CategoriesProductsScalarFieldEnum } from "./CategoriesProductsScalarFieldEnum";
 export { CategoryScalarFieldEnum } from "./CategoryScalarFieldEnum";
 export { ClientScalarFieldEnum } from "./ClientScalarFieldEnum";
 export { DocumentScalarFieldEnum } from "./DocumentScalarFieldEnum";

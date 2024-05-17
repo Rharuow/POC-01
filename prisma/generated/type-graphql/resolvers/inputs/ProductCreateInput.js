@@ -3,7 +3,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports.ProductCreateInput = void 0;
 const tslib_1 = require("tslib");
 const TypeGraphQL = tslib_1.__importStar(require("type-graphql"));
-const CategoryCreateNestedManyWithoutProdutosInput_1 = require("../inputs/CategoryCreateNestedManyWithoutProdutosInput");
+const CategoriesProductsCreateNestedManyWithoutProductInput_1 = require("../inputs/CategoriesProductsCreateNestedManyWithoutProductInput");
 const OrderCreateNestedManyWithoutProductInput_1 = require("../inputs/OrderCreateNestedManyWithoutProductInput");
 let ProductCreateInput = class ProductCreateInput {
 };
@@ -51,10 +51,10 @@ tslib_1.__decorate([
     tslib_1.__metadata("design:type", Number)
 ], ProductCreateInput.prototype, "inventory_quantity", void 0);
 tslib_1.__decorate([
-    TypeGraphQL.Field(_type => CategoryCreateNestedManyWithoutProdutosInput_1.CategoryCreateNestedManyWithoutProdutosInput, {
+    TypeGraphQL.Field(_type => CategoriesProductsCreateNestedManyWithoutProductInput_1.CategoriesProductsCreateNestedManyWithoutProductInput, {
         nullable: true
     }),
-    tslib_1.__metadata("design:type", CategoryCreateNestedManyWithoutProdutosInput_1.CategoryCreateNestedManyWithoutProdutosInput)
+    tslib_1.__metadata("design:type", CategoriesProductsCreateNestedManyWithoutProductInput_1.CategoriesProductsCreateNestedManyWithoutProductInput)
 ], ProductCreateInput.prototype, "categories", void 0);
 tslib_1.__decorate([
     TypeGraphQL.Field(_type => OrderCreateNestedManyWithoutProductInput_1.OrderCreateNestedManyWithoutProductInput, {

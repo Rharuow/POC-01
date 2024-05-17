@@ -1,4 +1,4 @@
-import { CategoryCreateNestedManyWithoutProdutosInput } from "../inputs/CategoryCreateNestedManyWithoutProdutosInput";
+import { CategoriesProductsCreateNestedManyWithoutProductInput } from "../inputs/CategoriesProductsCreateNestedManyWithoutProductInput";
 import { OrderCreateNestedManyWithoutProductInput } from "../inputs/OrderCreateNestedManyWithoutProductInput";
 export declare class ProductCreateInput {
     id?: string | undefined;
@@ -8,6 +8,6 @@ export declare class ProductCreateInput {
     name: string;
     description: string;
     inventory_quantity?: number | undefined;
-    categories?: CategoryCreateNestedManyWithoutProdutosInput | undefined;
+    categories?: CategoriesProductsCreateNestedManyWithoutProductInput | undefined;
     orders?: OrderCreateNestedManyWithoutProductInput | undefined;
 }

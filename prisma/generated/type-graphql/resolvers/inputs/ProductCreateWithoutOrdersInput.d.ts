@@ -1,4 +1,4 @@
-import { CategoryCreateNestedManyWithoutProdutosInput } from "../inputs/CategoryCreateNestedManyWithoutProdutosInput";
+import { CategoriesProductsCreateNestedManyWithoutProductInput } from "../inputs/CategoriesProductsCreateNestedManyWithoutProductInput";
 export declare class ProductCreateWithoutOrdersInput {
     id?: string | undefined;
     createdAt?: Date | undefined;
@@ -7,5 +7,5 @@ export declare class ProductCreateWithoutOrdersInput {
     name: string;
     description: string;
     inventory_quantity?: number | undefined;
-    categories?: CategoryCreateNestedManyWithoutProdutosInput | undefined;
+    categories?: CategoriesProductsCreateNestedManyWithoutProductInput | undefined;
 }

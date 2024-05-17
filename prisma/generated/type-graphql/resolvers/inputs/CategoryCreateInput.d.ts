@@ -1,9 +1,9 @@
-import { ProductCreateNestedManyWithoutCategoriesInput } from "../inputs/ProductCreateNestedManyWithoutCategoriesInput";
+import { CategoriesProductsCreateNestedManyWithoutCategoryInput } from "../inputs/CategoriesProductsCreateNestedManyWithoutCategoryInput";
 export declare class CategoryCreateInput {
     id?: string | undefined;
     createdAt?: Date | undefined;
     deletedAt?: Date | undefined;
     updatedAt?: Date | undefined;
     name: string;
-    produtos?: ProductCreateNestedManyWithoutCategoriesInput | undefined;
+    produtos?: CategoriesProductsCreateNestedManyWithoutCategoryInput | undefined;
 }

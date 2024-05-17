@@ -1,6 +1,6 @@
+import { CategoriesProductsListRelationFilter } from "../inputs/CategoriesProductsListRelationFilter";
 import { DateTimeFilter } from "../inputs/DateTimeFilter";
 import { DateTimeNullableFilter } from "../inputs/DateTimeNullableFilter";
-import { ProductListRelationFilter } from "../inputs/ProductListRelationFilter";
 import { StringFilter } from "../inputs/StringFilter";
 export declare class CategoryWhereInput {
     AND?: CategoryWhereInput[] | undefined;
@@ -11,5 +11,5 @@ export declare class CategoryWhereInput {
     deletedAt?: DateTimeNullableFilter | undefined;
     updatedAt?: DateTimeFilter | undefined;
     name?: StringFilter | undefined;
-    produtos?: ProductListRelationFilter | undefined;
+    produtos?: CategoriesProductsListRelationFilter | undefined;
 }

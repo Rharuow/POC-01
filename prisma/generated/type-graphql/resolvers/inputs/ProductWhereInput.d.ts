@@ -1,4 +1,4 @@
-import { CategoryListRelationFilter } from "../inputs/CategoryListRelationFilter";
+import { CategoriesProductsListRelationFilter } from "../inputs/CategoriesProductsListRelationFilter";
 import { DateTimeFilter } from "../inputs/DateTimeFilter";
 import { DateTimeNullableFilter } from "../inputs/DateTimeNullableFilter";
 import { IntFilter } from "../inputs/IntFilter";
@@ -15,6 +15,6 @@ export declare class ProductWhereInput {
     name?: StringFilter | undefined;
     description?: StringFilter | undefined;
     inventory_quantity?: IntFilter | undefined;
-    categories?: CategoryListRelationFilter | undefined;
+    categories?: CategoriesProductsListRelationFilter | undefined;
     orders?: OrderListRelationFilter | undefined;
 }

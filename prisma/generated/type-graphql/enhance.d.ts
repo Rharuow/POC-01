@@ -11,6 +11,7 @@ declare const crudResolversMap: {
     Client: typeof crudResolvers.ClientCrudResolver;
     Category: typeof crudResolvers.CategoryCrudResolver;
     Product: typeof crudResolvers.ProductCrudResolver;
+    CategoriesProducts: typeof crudResolvers.CategoriesProductsCrudResolver;
     Order: typeof crudResolvers.OrderCrudResolver;
     Sale: typeof crudResolvers.SaleCrudResolver;
 };
@@ -42,6 +43,7 @@ declare const relationResolversMap: {
     Client: typeof relationResolvers.ClientRelationsResolver;
     Category: typeof relationResolvers.CategoryRelationsResolver;
     Product: typeof relationResolvers.ProductRelationsResolver;
+    CategoriesProducts: typeof relationResolvers.CategoriesProductsRelationsResolver;
     Order: typeof relationResolvers.OrderRelationsResolver;
     Sale: typeof relationResolvers.SaleRelationsResolver;
 };

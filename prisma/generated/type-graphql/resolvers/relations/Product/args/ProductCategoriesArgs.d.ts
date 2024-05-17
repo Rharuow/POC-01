@@ -1,11 +1,11 @@
-import { CategoryOrderByWithRelationInput } from "../../../inputs/CategoryOrderByWithRelationInput";
-import { CategoryWhereInput } from "../../../inputs/CategoryWhereInput";
-import { CategoryWhereUniqueInput } from "../../../inputs/CategoryWhereUniqueInput";
+import { CategoriesProductsOrderByWithRelationInput } from "../../../inputs/CategoriesProductsOrderByWithRelationInput";
+import { CategoriesProductsWhereInput } from "../../../inputs/CategoriesProductsWhereInput";
+import { CategoriesProductsWhereUniqueInput } from "../../../inputs/CategoriesProductsWhereUniqueInput";
 export declare class ProductCategoriesArgs {
-    where?: CategoryWhereInput | undefined;
-    orderBy?: CategoryOrderByWithRelationInput[] | undefined;
-    cursor?: CategoryWhereUniqueInput | undefined;
+    where?: CategoriesProductsWhereInput | undefined;
+    orderBy?: CategoriesProductsOrderByWithRelationInput[] | undefined;
+    cursor?: CategoriesProductsWhereUniqueInput | undefined;
     take?: number | undefined;
     skip?: number | undefined;
-    distinct?: Array<"id" | "createdAt" | "deletedAt" | "updatedAt" | "name"> | undefined;
+    distinct?: Array<"id" | "categoryName" | "productId"> | undefined;
 }

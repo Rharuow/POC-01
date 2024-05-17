@@ -3,7 +3,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports.ProductWhereInput = void 0;
 const tslib_1 = require("tslib");
 const TypeGraphQL = tslib_1.__importStar(require("type-graphql"));
-const CategoryListRelationFilter_1 = require("../inputs/CategoryListRelationFilter");
+const CategoriesProductsListRelationFilter_1 = require("../inputs/CategoriesProductsListRelationFilter");
 const DateTimeFilter_1 = require("../inputs/DateTimeFilter");
 const DateTimeNullableFilter_1 = require("../inputs/DateTimeNullableFilter");
 const IntFilter_1 = require("../inputs/IntFilter");
@@ -73,10 +73,10 @@ tslib_1.__decorate([
     tslib_1.__metadata("design:type", IntFilter_1.IntFilter)
 ], ProductWhereInput.prototype, "inventory_quantity", void 0);
 tslib_1.__decorate([
-    TypeGraphQL.Field(_type => CategoryListRelationFilter_1.CategoryListRelationFilter, {
+    TypeGraphQL.Field(_type => CategoriesProductsListRelationFilter_1.CategoriesProductsListRelationFilter, {
         nullable: true
     }),
-    tslib_1.__metadata("design:type", CategoryListRelationFilter_1.CategoryListRelationFilter)
+    tslib_1.__metadata("design:type", CategoriesProductsListRelationFilter_1.CategoriesProductsListRelationFilter)
 ], ProductWhereInput.prototype, "categories", void 0);
 tslib_1.__decorate([
     TypeGraphQL.Field(_type => OrderListRelationFilter_1.OrderListRelationFilter, {

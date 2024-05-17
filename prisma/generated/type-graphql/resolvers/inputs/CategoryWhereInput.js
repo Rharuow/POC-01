@@ -3,9 +3,9 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports.CategoryWhereInput = void 0;
 const tslib_1 = require("tslib");
 const TypeGraphQL = tslib_1.__importStar(require("type-graphql"));
+const CategoriesProductsListRelationFilter_1 = require("../inputs/CategoriesProductsListRelationFilter");
 const DateTimeFilter_1 = require("../inputs/DateTimeFilter");
 const DateTimeNullableFilter_1 = require("../inputs/DateTimeNullableFilter");
-const ProductListRelationFilter_1 = require("../inputs/ProductListRelationFilter");
 const StringFilter_1 = require("../inputs/StringFilter");
 let CategoryWhereInput = class CategoryWhereInput {
 };
@@ -59,10 +59,10 @@ tslib_1.__decorate([
     tslib_1.__metadata("design:type", StringFilter_1.StringFilter)
 ], CategoryWhereInput.prototype, "name", void 0);
 tslib_1.__decorate([
-    TypeGraphQL.Field(_type => ProductListRelationFilter_1.ProductListRelationFilter, {
+    TypeGraphQL.Field(_type => CategoriesProductsListRelationFilter_1.CategoriesProductsListRelationFilter, {
         nullable: true
     }),
-    tslib_1.__metadata("design:type", ProductListRelationFilter_1.ProductListRelationFilter)
+    tslib_1.__metadata("design:type", CategoriesProductsListRelationFilter_1.CategoriesProductsListRelationFilter)
 ], CategoryWhereInput.prototype, "produtos", void 0);
 exports.CategoryWhereInput = CategoryWhereInput = tslib_1.__decorate([
     TypeGraphQL.InputType("CategoryWhereInput", {})

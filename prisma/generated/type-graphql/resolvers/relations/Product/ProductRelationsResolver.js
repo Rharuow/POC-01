@@ -3,7 +3,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports.ProductRelationsResolver = void 0;
 const tslib_1 = require("tslib");
 const TypeGraphQL = tslib_1.__importStar(require("type-graphql"));
-const Category_1 = require("../../../models/Category");
+const CategoriesProducts_1 = require("../../../models/CategoriesProducts");
 const Order_1 = require("../../../models/Order");
 const Product_1 = require("../../../models/Product");
 const ProductCategoriesArgs_1 = require("./args/ProductCategoriesArgs");
@@ -35,7 +35,7 @@ let ProductRelationsResolver = class ProductRelationsResolver {
 };
 exports.ProductRelationsResolver = ProductRelationsResolver;
 tslib_1.__decorate([
-    TypeGraphQL.FieldResolver(_type => [Category_1.Category], {
+    TypeGraphQL.FieldResolver(_type => [CategoriesProducts_1.CategoriesProducts], {
         nullable: false
     }),
     tslib_1.__param(0, TypeGraphQL.Root()),

@@ -1,6 +1,6 @@
+import { CategoriesProductsUpdateManyWithoutCategoryNestedInput } from "../inputs/CategoriesProductsUpdateManyWithoutCategoryNestedInput";
 import { DateTimeFieldUpdateOperationsInput } from "../inputs/DateTimeFieldUpdateOperationsInput";
 import { NullableDateTimeFieldUpdateOperationsInput } from "../inputs/NullableDateTimeFieldUpdateOperationsInput";
-import { ProductUpdateManyWithoutCategoriesNestedInput } from "../inputs/ProductUpdateManyWithoutCategoriesNestedInput";
 import { StringFieldUpdateOperationsInput } from "../inputs/StringFieldUpdateOperationsInput";
 export declare class CategoryUpdateInput {
     id?: StringFieldUpdateOperationsInput | undefined;
@@ -8,5 +8,5 @@ export declare class CategoryUpdateInput {
     deletedAt?: NullableDateTimeFieldUpdateOperationsInput | undefined;
     updatedAt?: DateTimeFieldUpdateOperationsInput | undefined;
     name?: StringFieldUpdateOperationsInput | undefined;
-    produtos?: ProductUpdateManyWithoutCategoriesNestedInput | undefined;
+    produtos?: CategoriesProductsUpdateManyWithoutCategoryNestedInput | undefined;
 }

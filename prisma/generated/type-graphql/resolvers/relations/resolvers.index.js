@@ -1,8 +1,10 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.SaleRelationsResolver = exports.ProductRelationsResolver = exports.OrderRelationsResolver = exports.DocumentRelationsResolver = exports.ClientRelationsResolver = exports.CategoryRelationsResolver = exports.AddressRelationsResolver = void 0;
+exports.SaleRelationsResolver = exports.ProductRelationsResolver = exports.OrderRelationsResolver = exports.DocumentRelationsResolver = exports.ClientRelationsResolver = exports.CategoryRelationsResolver = exports.CategoriesProductsRelationsResolver = exports.AddressRelationsResolver = void 0;
 var AddressRelationsResolver_1 = require("./Address/AddressRelationsResolver");
 Object.defineProperty(exports, "AddressRelationsResolver", { enumerable: true, get: function () { return AddressRelationsResolver_1.AddressRelationsResolver; } });
+var CategoriesProductsRelationsResolver_1 = require("./CategoriesProducts/CategoriesProductsRelationsResolver");
+Object.defineProperty(exports, "CategoriesProductsRelationsResolver", { enumerable: true, get: function () { return CategoriesProductsRelationsResolver_1.CategoriesProductsRelationsResolver; } });
 var CategoryRelationsResolver_1 = require("./Category/CategoryRelationsResolver");
 Object.defineProperty(exports, "CategoryRelationsResolver", { enumerable: true, get: function () { return CategoryRelationsResolver_1.CategoryRelationsResolver; } });
 var ClientRelationsResolver_1 = require("./Client/ClientRelationsResolver");
