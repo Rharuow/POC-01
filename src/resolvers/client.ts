@@ -13,7 +13,9 @@ export class ClienteResolver {
 
   @Query((_types) => Client)
   async client(@Arg("id") id: string) {
-    return await this.prisma.client.findMany();
+    return await this.prisma.client.findUnique({
+      where: { id },
+    });
   }
 
   @Mutation((_types) => Client)
