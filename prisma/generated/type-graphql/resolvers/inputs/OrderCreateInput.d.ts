@@ -1,12 +1,11 @@
-import { ProductCreateNestedOneWithoutOrdersInput } from "../inputs/ProductCreateNestedOneWithoutOrdersInput";
-import { SaleCreateNestedOneWithoutOrdersInput } from "../inputs/SaleCreateNestedOneWithoutOrdersInput";
+import { ClientCreateNestedOneWithoutOrdersInput } from "../inputs/ClientCreateNestedOneWithoutOrdersInput";
+import { OrderItemCreateNestedManyWithoutOrderInput } from "../inputs/OrderItemCreateNestedManyWithoutOrderInput";
 export declare class OrderCreateInput {
     id?: string | undefined;
     createdAt?: Date | undefined;
     deletedAt?: Date | undefined;
     updatedAt?: Date | undefined;
-    amount?: number | undefined;
     totalPrice: number;
-    product: ProductCreateNestedOneWithoutOrdersInput;
-    sale: SaleCreateNestedOneWithoutOrdersInput;
+    orderItems?: OrderItemCreateNestedManyWithoutOrderInput | undefined;
+    client: ClientCreateNestedOneWithoutOrdersInput;
 }

@@ -1,8 +1,8 @@
 import { ProductCountCategoriesArgs } from "./args/ProductCountCategoriesArgs";
-import { ProductCountOrdersArgs } from "./args/ProductCountOrdersArgs";
+import { ProductCountOrderItemsArgs } from "./args/ProductCountOrderItemsArgs";
 export declare class ProductCount {
     categories: number;
-    orders: number;
+    orderItems: number;
     getCategories(root: ProductCount, args: ProductCountCategoriesArgs): number;
-    getOrders(root: ProductCount, args: ProductCountOrdersArgs): number;
+    getOrderItems(root: ProductCount, args: ProductCountOrderItemsArgs): number;
 }

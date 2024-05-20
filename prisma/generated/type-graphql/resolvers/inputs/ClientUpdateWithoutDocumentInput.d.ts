@@ -2,7 +2,7 @@ import { AddressUpdateOneWithoutClientNestedInput } from "../inputs/AddressUpdat
 import { DateTimeFieldUpdateOperationsInput } from "../inputs/DateTimeFieldUpdateOperationsInput";
 import { NullableDateTimeFieldUpdateOperationsInput } from "../inputs/NullableDateTimeFieldUpdateOperationsInput";
 import { NullableStringFieldUpdateOperationsInput } from "../inputs/NullableStringFieldUpdateOperationsInput";
-import { SaleUpdateManyWithoutClientNestedInput } from "../inputs/SaleUpdateManyWithoutClientNestedInput";
+import { OrderUpdateManyWithoutClientNestedInput } from "../inputs/OrderUpdateManyWithoutClientNestedInput";
 import { StringFieldUpdateOperationsInput } from "../inputs/StringFieldUpdateOperationsInput";
 export declare class ClientUpdateWithoutDocumentInput {
     id?: StringFieldUpdateOperationsInput | undefined;
@@ -14,5 +14,5 @@ export declare class ClientUpdateWithoutDocumentInput {
     documentId?: NullableStringFieldUpdateOperationsInput | undefined;
     addressId?: NullableStringFieldUpdateOperationsInput | undefined;
     address?: AddressUpdateOneWithoutClientNestedInput | undefined;
-    sales?: SaleUpdateManyWithoutClientNestedInput | undefined;
+    Orders?: OrderUpdateManyWithoutClientNestedInput | undefined;
 }

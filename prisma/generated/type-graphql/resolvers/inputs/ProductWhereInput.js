@@ -6,8 +6,9 @@ const TypeGraphQL = tslib_1.__importStar(require("type-graphql"));
 const CategoriesProductsListRelationFilter_1 = require("../inputs/CategoriesProductsListRelationFilter");
 const DateTimeFilter_1 = require("../inputs/DateTimeFilter");
 const DateTimeNullableFilter_1 = require("../inputs/DateTimeNullableFilter");
+const FloatFilter_1 = require("../inputs/FloatFilter");
 const IntFilter_1 = require("../inputs/IntFilter");
-const OrderListRelationFilter_1 = require("../inputs/OrderListRelationFilter");
+const OrderItemListRelationFilter_1 = require("../inputs/OrderItemListRelationFilter");
 const StringFilter_1 = require("../inputs/StringFilter");
 let ProductWhereInput = class ProductWhereInput {
 };
@@ -73,17 +74,23 @@ tslib_1.__decorate([
     tslib_1.__metadata("design:type", IntFilter_1.IntFilter)
 ], ProductWhereInput.prototype, "inventory_quantity", void 0);
 tslib_1.__decorate([
+    TypeGraphQL.Field(_type => FloatFilter_1.FloatFilter, {
+        nullable: true
+    }),
+    tslib_1.__metadata("design:type", FloatFilter_1.FloatFilter)
+], ProductWhereInput.prototype, "price", void 0);
+tslib_1.__decorate([
     TypeGraphQL.Field(_type => CategoriesProductsListRelationFilter_1.CategoriesProductsListRelationFilter, {
         nullable: true
     }),
     tslib_1.__metadata("design:type", CategoriesProductsListRelationFilter_1.CategoriesProductsListRelationFilter)
 ], ProductWhereInput.prototype, "categories", void 0);
 tslib_1.__decorate([
-    TypeGraphQL.Field(_type => OrderListRelationFilter_1.OrderListRelationFilter, {
+    TypeGraphQL.Field(_type => OrderItemListRelationFilter_1.OrderItemListRelationFilter, {
         nullable: true
     }),
-    tslib_1.__metadata("design:type", OrderListRelationFilter_1.OrderListRelationFilter)
-], ProductWhereInput.prototype, "orders", void 0);
+    tslib_1.__metadata("design:type", OrderItemListRelationFilter_1.OrderItemListRelationFilter)
+], ProductWhereInput.prototype, "orderItems", void 0);
 exports.ProductWhereInput = ProductWhereInput = tslib_1.__decorate([
     TypeGraphQL.InputType("ProductWhereInput", {})
 ], ProductWhereInput);

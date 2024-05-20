@@ -7,12 +7,6 @@ let OrderSumAggregate = class OrderSumAggregate {
 };
 exports.OrderSumAggregate = OrderSumAggregate;
 tslib_1.__decorate([
-    TypeGraphQL.Field(_type => TypeGraphQL.Int, {
-        nullable: true
-    }),
-    tslib_1.__metadata("design:type", Number)
-], OrderSumAggregate.prototype, "amount", void 0);
-tslib_1.__decorate([
     TypeGraphQL.Field(_type => TypeGraphQL.Float, {
         nullable: true
     }),

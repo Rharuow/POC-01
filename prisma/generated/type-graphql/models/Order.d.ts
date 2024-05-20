@@ -1,14 +1,14 @@
-import { Product } from "../models/Product";
-import { Sale } from "../models/Sale";
+import { Client } from "../models/Client";
+import { OrderItem } from "../models/OrderItem";
+import { OrderCount } from "../resolvers/outputs/OrderCount";
 export declare class Order {
     id: string;
     createdAt: Date;
     deletedAt?: Date | null;
     updatedAt: Date;
-    amount: number;
     totalPrice: number;
-    productId: string;
-    product?: Product;
-    saleId: string;
-    sale?: Sale;
+    orderItems?: OrderItem[];
+    clientId: string;
+    client?: Client;
+    _count?: OrderCount | null;
 }

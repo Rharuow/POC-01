@@ -12,8 +12,8 @@ declare const crudResolversMap: {
     Category: typeof crudResolvers.CategoryCrudResolver;
     Product: typeof crudResolvers.ProductCrudResolver;
     CategoriesProducts: typeof crudResolvers.CategoriesProductsCrudResolver;
+    OrderItem: typeof crudResolvers.OrderItemCrudResolver;
     Order: typeof crudResolvers.OrderCrudResolver;
-    Sale: typeof crudResolvers.SaleCrudResolver;
 };
 type ResolverModelNames = keyof typeof crudResolversMap;
 type ModelResolverActionNames<TModel extends ResolverModelNames> = keyof typeof crudResolversMap[TModel]["prototype"];
@@ -44,8 +44,8 @@ declare const relationResolversMap: {
     Category: typeof relationResolvers.CategoryRelationsResolver;
     Product: typeof relationResolvers.ProductRelationsResolver;
     CategoriesProducts: typeof relationResolvers.CategoriesProductsRelationsResolver;
+    OrderItem: typeof relationResolvers.OrderItemRelationsResolver;
     Order: typeof relationResolvers.OrderRelationsResolver;
-    Sale: typeof relationResolvers.SaleRelationsResolver;
 };
 type RelationResolverModelNames = keyof typeof relationResolversMap;
 type RelationResolverActionNames<TModel extends RelationResolverModelNames> = keyof typeof relationResolversMap[TModel]["prototype"];

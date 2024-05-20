@@ -1,6 +1,6 @@
 import { Address } from "../models/Address";
 import { Document } from "../models/Document";
-import { Sale } from "../models/Sale";
+import { Order } from "../models/Order";
 import { ClientCount } from "../resolvers/outputs/ClientCount";
 export declare class Client {
     id: string;
@@ -13,6 +13,6 @@ export declare class Client {
     document?: Document | null;
     addressId?: string | null;
     address?: Address | null;
-    sales?: Sale[];
+    Orders?: Order[];
     _count?: ClientCount | null;
 }

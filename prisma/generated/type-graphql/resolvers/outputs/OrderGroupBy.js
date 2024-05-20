@@ -36,12 +36,6 @@ tslib_1.__decorate([
     tslib_1.__metadata("design:type", Date)
 ], OrderGroupBy.prototype, "updatedAt", void 0);
 tslib_1.__decorate([
-    TypeGraphQL.Field(_type => TypeGraphQL.Int, {
-        nullable: false
-    }),
-    tslib_1.__metadata("design:type", Number)
-], OrderGroupBy.prototype, "amount", void 0);
-tslib_1.__decorate([
     TypeGraphQL.Field(_type => TypeGraphQL.Float, {
         nullable: false
     }),
@@ -52,13 +46,7 @@ tslib_1.__decorate([
         nullable: false
     }),
     tslib_1.__metadata("design:type", String)
-], OrderGroupBy.prototype, "productId", void 0);
-tslib_1.__decorate([
-    TypeGraphQL.Field(_type => String, {
-        nullable: false
-    }),
-    tslib_1.__metadata("design:type", String)
-], OrderGroupBy.prototype, "saleId", void 0);
+], OrderGroupBy.prototype, "clientId", void 0);
 tslib_1.__decorate([
     TypeGraphQL.Field(_type => OrderCountAggregate_1.OrderCountAggregate, {
         nullable: true

@@ -35,25 +35,13 @@ tslib_1.__decorate([
         nullable: false
     }),
     tslib_1.__metadata("design:type", Number)
-], OrderCountAggregate.prototype, "amount", void 0);
-tslib_1.__decorate([
-    TypeGraphQL.Field(_type => TypeGraphQL.Int, {
-        nullable: false
-    }),
-    tslib_1.__metadata("design:type", Number)
 ], OrderCountAggregate.prototype, "totalPrice", void 0);
 tslib_1.__decorate([
     TypeGraphQL.Field(_type => TypeGraphQL.Int, {
         nullable: false
     }),
     tslib_1.__metadata("design:type", Number)
-], OrderCountAggregate.prototype, "productId", void 0);
-tslib_1.__decorate([
-    TypeGraphQL.Field(_type => TypeGraphQL.Int, {
-        nullable: false
-    }),
-    tslib_1.__metadata("design:type", Number)
-], OrderCountAggregate.prototype, "saleId", void 0);
+], OrderCountAggregate.prototype, "clientId", void 0);
 tslib_1.__decorate([
     TypeGraphQL.Field(_type => TypeGraphQL.Int, {
         nullable: false

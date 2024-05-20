@@ -3,8 +3,6 @@ export declare enum OrderScalarFieldEnum {
     createdAt = "createdAt",
     deletedAt = "deletedAt",
     updatedAt = "updatedAt",
-    amount = "amount",
     totalPrice = "totalPrice",
-    productId = "productId",
-    saleId = "saleId"
+    clientId = "clientId"
 }

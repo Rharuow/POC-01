@@ -11,6 +11,7 @@ export declare class ProductGroupBy {
     name: string;
     description: string;
     inventory_quantity: number;
+    price: number;
     _count: ProductCountAggregate | null;
     _avg: ProductAvgAggregate | null;
     _sum: ProductSumAggregate | null;

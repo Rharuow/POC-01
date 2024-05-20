@@ -12,6 +12,7 @@ var ProductScalarFieldEnum;
     ProductScalarFieldEnum["name"] = "name";
     ProductScalarFieldEnum["description"] = "description";
     ProductScalarFieldEnum["inventory_quantity"] = "inventory_quantity";
+    ProductScalarFieldEnum["price"] = "price";
 })(ProductScalarFieldEnum || (exports.ProductScalarFieldEnum = ProductScalarFieldEnum = {}));
 TypeGraphQL.registerEnumType(ProductScalarFieldEnum, {
     name: "ProductScalarFieldEnum",

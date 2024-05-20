@@ -5,7 +5,7 @@ const tslib_1 = require("tslib");
 const TypeGraphQL = tslib_1.__importStar(require("type-graphql"));
 const AddressCreateNestedOneWithoutClientInput_1 = require("../inputs/AddressCreateNestedOneWithoutClientInput");
 const DocumentCreateNestedOneWithoutClientInput_1 = require("../inputs/DocumentCreateNestedOneWithoutClientInput");
-const SaleCreateNestedManyWithoutClientInput_1 = require("../inputs/SaleCreateNestedManyWithoutClientInput");
+const OrderCreateNestedManyWithoutClientInput_1 = require("../inputs/OrderCreateNestedManyWithoutClientInput");
 let ClientCreateInput = class ClientCreateInput {
 };
 exports.ClientCreateInput = ClientCreateInput;
@@ -70,11 +70,11 @@ tslib_1.__decorate([
     tslib_1.__metadata("design:type", AddressCreateNestedOneWithoutClientInput_1.AddressCreateNestedOneWithoutClientInput)
 ], ClientCreateInput.prototype, "address", void 0);
 tslib_1.__decorate([
-    TypeGraphQL.Field(_type => SaleCreateNestedManyWithoutClientInput_1.SaleCreateNestedManyWithoutClientInput, {
+    TypeGraphQL.Field(_type => OrderCreateNestedManyWithoutClientInput_1.OrderCreateNestedManyWithoutClientInput, {
         nullable: true
     }),
-    tslib_1.__metadata("design:type", SaleCreateNestedManyWithoutClientInput_1.SaleCreateNestedManyWithoutClientInput)
-], ClientCreateInput.prototype, "sales", void 0);
+    tslib_1.__metadata("design:type", OrderCreateNestedManyWithoutClientInput_1.OrderCreateNestedManyWithoutClientInput)
+], ClientCreateInput.prototype, "Orders", void 0);
 exports.ClientCreateInput = ClientCreateInput = tslib_1.__decorate([
     TypeGraphQL.InputType("ClientCreateInput", {})
 ], ClientCreateInput);

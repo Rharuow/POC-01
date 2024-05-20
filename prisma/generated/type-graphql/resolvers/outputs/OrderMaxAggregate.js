@@ -31,12 +31,6 @@ tslib_1.__decorate([
     tslib_1.__metadata("design:type", Date)
 ], OrderMaxAggregate.prototype, "updatedAt", void 0);
 tslib_1.__decorate([
-    TypeGraphQL.Field(_type => TypeGraphQL.Int, {
-        nullable: true
-    }),
-    tslib_1.__metadata("design:type", Number)
-], OrderMaxAggregate.prototype, "amount", void 0);
-tslib_1.__decorate([
     TypeGraphQL.Field(_type => TypeGraphQL.Float, {
         nullable: true
     }),
@@ -47,13 +41,7 @@ tslib_1.__decorate([
         nullable: true
     }),
     tslib_1.__metadata("design:type", String)
-], OrderMaxAggregate.prototype, "productId", void 0);
-tslib_1.__decorate([
-    TypeGraphQL.Field(_type => String, {
-        nullable: true
-    }),
-    tslib_1.__metadata("design:type", String)
-], OrderMaxAggregate.prototype, "saleId", void 0);
+], OrderMaxAggregate.prototype, "clientId", void 0);
 exports.OrderMaxAggregate = OrderMaxAggregate = tslib_1.__decorate([
     TypeGraphQL.ObjectType("OrderMaxAggregate", {})
 ], OrderMaxAggregate);

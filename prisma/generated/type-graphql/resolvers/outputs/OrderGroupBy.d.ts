@@ -8,10 +8,8 @@ export declare class OrderGroupBy {
     createdAt: Date;
     deletedAt: Date | null;
     updatedAt: Date;
-    amount: number;
     totalPrice: number;
-    productId: string;
-    saleId: string;
+    clientId: string;
     _count: OrderCountAggregate | null;
     _avg: OrderAvgAggregate | null;
     _sum: OrderSumAggregate | null;

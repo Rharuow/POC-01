@@ -1,10 +1,10 @@
 import type { GraphQLResolveInfo } from "graphql";
 import { CategoriesProducts } from "../../../models/CategoriesProducts";
-import { Order } from "../../../models/Order";
+import { OrderItem } from "../../../models/OrderItem";
 import { Product } from "../../../models/Product";
 import { ProductCategoriesArgs } from "./args/ProductCategoriesArgs";
-import { ProductOrdersArgs } from "./args/ProductOrdersArgs";
+import { ProductOrderItemsArgs } from "./args/ProductOrderItemsArgs";
 export declare class ProductRelationsResolver {
     categories(product: Product, ctx: any, info: GraphQLResolveInfo, args: ProductCategoriesArgs): Promise<CategoriesProducts[]>;
-    orders(product: Product, ctx: any, info: GraphQLResolveInfo, args: ProductOrdersArgs): Promise<Order[]>;
+    orderItems(product: Product, ctx: any, info: GraphQLResolveInfo, args: ProductOrderItemsArgs): Promise<OrderItem[]>;
 }

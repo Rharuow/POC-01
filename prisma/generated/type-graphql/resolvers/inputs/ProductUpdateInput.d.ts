@@ -1,8 +1,9 @@
 import { CategoriesProductsUpdateManyWithoutProductNestedInput } from "../inputs/CategoriesProductsUpdateManyWithoutProductNestedInput";
 import { DateTimeFieldUpdateOperationsInput } from "../inputs/DateTimeFieldUpdateOperationsInput";
+import { FloatFieldUpdateOperationsInput } from "../inputs/FloatFieldUpdateOperationsInput";
 import { IntFieldUpdateOperationsInput } from "../inputs/IntFieldUpdateOperationsInput";
 import { NullableDateTimeFieldUpdateOperationsInput } from "../inputs/NullableDateTimeFieldUpdateOperationsInput";
-import { OrderUpdateManyWithoutProductNestedInput } from "../inputs/OrderUpdateManyWithoutProductNestedInput";
+import { OrderItemUpdateManyWithoutProductNestedInput } from "../inputs/OrderItemUpdateManyWithoutProductNestedInput";
 import { StringFieldUpdateOperationsInput } from "../inputs/StringFieldUpdateOperationsInput";
 export declare class ProductUpdateInput {
     id?: StringFieldUpdateOperationsInput | undefined;
@@ -12,6 +13,7 @@ export declare class ProductUpdateInput {
     name?: StringFieldUpdateOperationsInput | undefined;
     description?: StringFieldUpdateOperationsInput | undefined;
     inventory_quantity?: IntFieldUpdateOperationsInput | undefined;
+    price?: FloatFieldUpdateOperationsInput | undefined;
     categories?: CategoriesProductsUpdateManyWithoutProductNestedInput | undefined;
-    orders?: OrderUpdateManyWithoutProductNestedInput | undefined;
+    orderItems?: OrderItemUpdateManyWithoutProductNestedInput | undefined;
 }

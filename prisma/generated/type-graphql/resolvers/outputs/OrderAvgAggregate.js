@@ -11,12 +11,6 @@ tslib_1.__decorate([
         nullable: true
     }),
     tslib_1.__metadata("design:type", Number)
-], OrderAvgAggregate.prototype, "amount", void 0);
-tslib_1.__decorate([
-    TypeGraphQL.Field(_type => TypeGraphQL.Float, {
-        nullable: true
-    }),
-    tslib_1.__metadata("design:type", Number)
 ], OrderAvgAggregate.prototype, "totalPrice", void 0);
 exports.OrderAvgAggregate = OrderAvgAggregate = tslib_1.__decorate([
     TypeGraphQL.ObjectType("OrderAvgAggregate", {})

@@ -54,6 +54,12 @@ tslib_1.__decorate([
     tslib_1.__metadata("design:type", Number)
 ], ProductGroupBy.prototype, "inventory_quantity", void 0);
 tslib_1.__decorate([
+    TypeGraphQL.Field(_type => TypeGraphQL.Float, {
+        nullable: false
+    }),
+    tslib_1.__metadata("design:type", Number)
+], ProductGroupBy.prototype, "price", void 0);
+tslib_1.__decorate([
     TypeGraphQL.Field(_type => ProductCountAggregate_1.ProductCountAggregate, {
         nullable: true
     }),

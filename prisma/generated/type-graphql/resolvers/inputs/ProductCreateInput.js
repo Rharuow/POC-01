@@ -4,7 +4,7 @@ exports.ProductCreateInput = void 0;
 const tslib_1 = require("tslib");
 const TypeGraphQL = tslib_1.__importStar(require("type-graphql"));
 const CategoriesProductsCreateNestedManyWithoutProductInput_1 = require("../inputs/CategoriesProductsCreateNestedManyWithoutProductInput");
-const OrderCreateNestedManyWithoutProductInput_1 = require("../inputs/OrderCreateNestedManyWithoutProductInput");
+const OrderItemCreateNestedManyWithoutProductInput_1 = require("../inputs/OrderItemCreateNestedManyWithoutProductInput");
 let ProductCreateInput = class ProductCreateInput {
 };
 exports.ProductCreateInput = ProductCreateInput;
@@ -51,17 +51,23 @@ tslib_1.__decorate([
     tslib_1.__metadata("design:type", Number)
 ], ProductCreateInput.prototype, "inventory_quantity", void 0);
 tslib_1.__decorate([
+    TypeGraphQL.Field(_type => TypeGraphQL.Float, {
+        nullable: true
+    }),
+    tslib_1.__metadata("design:type", Number)
+], ProductCreateInput.prototype, "price", void 0);
+tslib_1.__decorate([
     TypeGraphQL.Field(_type => CategoriesProductsCreateNestedManyWithoutProductInput_1.CategoriesProductsCreateNestedManyWithoutProductInput, {
         nullable: true
     }),
     tslib_1.__metadata("design:type", CategoriesProductsCreateNestedManyWithoutProductInput_1.CategoriesProductsCreateNestedManyWithoutProductInput)
 ], ProductCreateInput.prototype, "categories", void 0);
 tslib_1.__decorate([
-    TypeGraphQL.Field(_type => OrderCreateNestedManyWithoutProductInput_1.OrderCreateNestedManyWithoutProductInput, {
+    TypeGraphQL.Field(_type => OrderItemCreateNestedManyWithoutProductInput_1.OrderItemCreateNestedManyWithoutProductInput, {
         nullable: true
     }),
-    tslib_1.__metadata("design:type", OrderCreateNestedManyWithoutProductInput_1.OrderCreateNestedManyWithoutProductInput)
-], ProductCreateInput.prototype, "orders", void 0);
+    tslib_1.__metadata("design:type", OrderItemCreateNestedManyWithoutProductInput_1.OrderItemCreateNestedManyWithoutProductInput)
+], ProductCreateInput.prototype, "orderItems", void 0);
 exports.ProductCreateInput = ProductCreateInput = tslib_1.__decorate([
     TypeGraphQL.InputType("ProductCreateInput", {})
 ], ProductCreateInput);

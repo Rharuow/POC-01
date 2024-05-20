@@ -7,7 +7,7 @@ const DateTimeFieldUpdateOperationsInput_1 = require("../inputs/DateTimeFieldUpd
 const DocumentUpdateOneWithoutClientNestedInput_1 = require("../inputs/DocumentUpdateOneWithoutClientNestedInput");
 const NullableDateTimeFieldUpdateOperationsInput_1 = require("../inputs/NullableDateTimeFieldUpdateOperationsInput");
 const NullableStringFieldUpdateOperationsInput_1 = require("../inputs/NullableStringFieldUpdateOperationsInput");
-const SaleUpdateManyWithoutClientNestedInput_1 = require("../inputs/SaleUpdateManyWithoutClientNestedInput");
+const OrderUpdateManyWithoutClientNestedInput_1 = require("../inputs/OrderUpdateManyWithoutClientNestedInput");
 const StringFieldUpdateOperationsInput_1 = require("../inputs/StringFieldUpdateOperationsInput");
 let ClientUpdateWithoutAddressInput = class ClientUpdateWithoutAddressInput {
 };
@@ -67,11 +67,11 @@ tslib_1.__decorate([
     tslib_1.__metadata("design:type", DocumentUpdateOneWithoutClientNestedInput_1.DocumentUpdateOneWithoutClientNestedInput)
 ], ClientUpdateWithoutAddressInput.prototype, "document", void 0);
 tslib_1.__decorate([
-    TypeGraphQL.Field(_type => SaleUpdateManyWithoutClientNestedInput_1.SaleUpdateManyWithoutClientNestedInput, {
+    TypeGraphQL.Field(_type => OrderUpdateManyWithoutClientNestedInput_1.OrderUpdateManyWithoutClientNestedInput, {
         nullable: true
     }),
-    tslib_1.__metadata("design:type", SaleUpdateManyWithoutClientNestedInput_1.SaleUpdateManyWithoutClientNestedInput)
-], ClientUpdateWithoutAddressInput.prototype, "sales", void 0);
+    tslib_1.__metadata("design:type", OrderUpdateManyWithoutClientNestedInput_1.OrderUpdateManyWithoutClientNestedInput)
+], ClientUpdateWithoutAddressInput.prototype, "Orders", void 0);
 exports.ClientUpdateWithoutAddressInput = ClientUpdateWithoutAddressInput = tslib_1.__decorate([
     TypeGraphQL.InputType("ClientUpdateWithoutAddressInput", {})
 ], ClientUpdateWithoutAddressInput);

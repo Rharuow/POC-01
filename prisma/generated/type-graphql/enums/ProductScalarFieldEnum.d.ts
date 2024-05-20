@@ -5,5 +5,6 @@ export declare enum ProductScalarFieldEnum {
     updatedAt = "updatedAt",
     name = "name",
     description = "description",
-    inventory_quantity = "inventory_quantity"
+    inventory_quantity = "inventory_quantity",
+    price = "price"
 }

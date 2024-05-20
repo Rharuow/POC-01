@@ -3,6 +3,7 @@ import { buildSchema } from "type-graphql";
 import { ApolloServer } from "apollo-server";
 import { PrismaClient } from "@prisma/client";
 import { resolvers } from "./prisma/generated/type-graphql";
+import { ClienteResolver } from "./src/resolvers/client";
 
 const prisma = new PrismaClient();
 
@@ -12,7 +13,7 @@ interface Context {
 
 async function main() {
   const schema = await buildSchema({
-    resolvers,
+    resolvers: [...resolvers, ClienteResolver],
     validate: false,
   });
 

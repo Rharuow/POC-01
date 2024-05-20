@@ -7,5 +7,5 @@ export declare class FindFirstProductOrThrowArgs {
     cursor?: ProductWhereUniqueInput | undefined;
     take?: number | undefined;
     skip?: number | undefined;
-    distinct?: Array<"id" | "createdAt" | "deletedAt" | "updatedAt" | "name" | "description" | "inventory_quantity"> | undefined;
+    distinct?: Array<"id" | "createdAt" | "deletedAt" | "updatedAt" | "name" | "description" | "inventory_quantity" | "price"> | undefined;
 }

@@ -6,4 +6,5 @@ export declare class ProductMaxAggregate {
     name: string | null;
     description: string | null;
     inventory_quantity: number | null;
+    price: number | null;
 }

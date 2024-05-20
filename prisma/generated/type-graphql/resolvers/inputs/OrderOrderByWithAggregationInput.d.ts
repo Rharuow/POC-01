@@ -9,10 +9,8 @@ export declare class OrderOrderByWithAggregationInput {
     createdAt?: "asc" | "desc" | undefined;
     deletedAt?: SortOrderInput | undefined;
     updatedAt?: "asc" | "desc" | undefined;
-    amount?: "asc" | "desc" | undefined;
     totalPrice?: "asc" | "desc" | undefined;
-    productId?: "asc" | "desc" | undefined;
-    saleId?: "asc" | "desc" | undefined;
+    clientId?: "asc" | "desc" | undefined;
     _count?: OrderCountOrderByAggregateInput | undefined;
     _avg?: OrderAvgOrderByAggregateInput | undefined;
     _max?: OrderMaxOrderByAggregateInput | undefined;

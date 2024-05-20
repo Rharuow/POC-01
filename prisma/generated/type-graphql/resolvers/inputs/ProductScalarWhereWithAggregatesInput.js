@@ -5,6 +5,7 @@ const tslib_1 = require("tslib");
 const TypeGraphQL = tslib_1.__importStar(require("type-graphql"));
 const DateTimeNullableWithAggregatesFilter_1 = require("../inputs/DateTimeNullableWithAggregatesFilter");
 const DateTimeWithAggregatesFilter_1 = require("../inputs/DateTimeWithAggregatesFilter");
+const FloatWithAggregatesFilter_1 = require("../inputs/FloatWithAggregatesFilter");
 const IntWithAggregatesFilter_1 = require("../inputs/IntWithAggregatesFilter");
 const StringWithAggregatesFilter_1 = require("../inputs/StringWithAggregatesFilter");
 let ProductScalarWhereWithAggregatesInput = class ProductScalarWhereWithAggregatesInput {
@@ -70,6 +71,12 @@ tslib_1.__decorate([
     }),
     tslib_1.__metadata("design:type", IntWithAggregatesFilter_1.IntWithAggregatesFilter)
 ], ProductScalarWhereWithAggregatesInput.prototype, "inventory_quantity", void 0);
+tslib_1.__decorate([
+    TypeGraphQL.Field(_type => FloatWithAggregatesFilter_1.FloatWithAggregatesFilter, {
+        nullable: true
+    }),
+    tslib_1.__metadata("design:type", FloatWithAggregatesFilter_1.FloatWithAggregatesFilter)
+], ProductScalarWhereWithAggregatesInput.prototype, "price", void 0);
 exports.ProductScalarWhereWithAggregatesInput = ProductScalarWhereWithAggregatesInput = tslib_1.__decorate([
     TypeGraphQL.InputType("ProductScalarWhereWithAggregatesInput", {})
 ], ProductScalarWhereWithAggregatesInput);

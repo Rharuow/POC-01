@@ -3,9 +3,7 @@ export declare class OrderCountAggregate {
     createdAt: number;
     deletedAt: number;
     updatedAt: number;
-    amount: number;
     totalPrice: number;
-    productId: number;
-    saleId: number;
+    clientId: number;
     _all: number;
 }

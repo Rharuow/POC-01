@@ -9,10 +9,8 @@ var OrderScalarFieldEnum;
     OrderScalarFieldEnum["createdAt"] = "createdAt";
     OrderScalarFieldEnum["deletedAt"] = "deletedAt";
     OrderScalarFieldEnum["updatedAt"] = "updatedAt";
-    OrderScalarFieldEnum["amount"] = "amount";
     OrderScalarFieldEnum["totalPrice"] = "totalPrice";
-    OrderScalarFieldEnum["productId"] = "productId";
-    OrderScalarFieldEnum["saleId"] = "saleId";
+    OrderScalarFieldEnum["clientId"] = "clientId";
 })(OrderScalarFieldEnum || (exports.OrderScalarFieldEnum = OrderScalarFieldEnum = {}));
 TypeGraphQL.registerEnumType(OrderScalarFieldEnum, {
     name: "OrderScalarFieldEnum",

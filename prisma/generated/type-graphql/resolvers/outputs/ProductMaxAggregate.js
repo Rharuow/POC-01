@@ -48,6 +48,12 @@ tslib_1.__decorate([
     }),
     tslib_1.__metadata("design:type", Number)
 ], ProductMaxAggregate.prototype, "inventory_quantity", void 0);
+tslib_1.__decorate([
+    TypeGraphQL.Field(_type => TypeGraphQL.Float, {
+        nullable: true
+    }),
+    tslib_1.__metadata("design:type", Number)
+], ProductMaxAggregate.prototype, "price", void 0);
 exports.ProductMaxAggregate = ProductMaxAggregate = tslib_1.__decorate([
     TypeGraphQL.ObjectType("ProductMaxAggregate", {})
 ], ProductMaxAggregate);

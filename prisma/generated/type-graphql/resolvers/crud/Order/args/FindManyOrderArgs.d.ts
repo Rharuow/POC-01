@@ -7,5 +7,5 @@ export declare class FindManyOrderArgs {
     cursor?: OrderWhereUniqueInput | undefined;
     take?: number | undefined;
     skip?: number | undefined;
-    distinct?: Array<"id" | "createdAt" | "deletedAt" | "updatedAt" | "amount" | "totalPrice" | "productId" | "saleId"> | undefined;
+    distinct?: Array<"id" | "createdAt" | "deletedAt" | "updatedAt" | "totalPrice" | "clientId"> | undefined;
 }

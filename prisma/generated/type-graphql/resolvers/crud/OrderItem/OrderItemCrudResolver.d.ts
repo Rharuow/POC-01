@@ -1,0 +1,35 @@
+import type { GraphQLResolveInfo } from "graphql";
+import { AggregateOrderItemArgs } from "./args/AggregateOrderItemArgs";
+import { CreateManyOrderItemArgs } from "./args/CreateManyOrderItemArgs";
+import { CreateOneOrderItemArgs } from "./args/CreateOneOrderItemArgs";
+import { DeleteManyOrderItemArgs } from "./args/DeleteManyOrderItemArgs";
+import { DeleteOneOrderItemArgs } from "./args/DeleteOneOrderItemArgs";
+import { FindFirstOrderItemArgs } from "./args/FindFirstOrderItemArgs";
+import { FindFirstOrderItemOrThrowArgs } from "./args/FindFirstOrderItemOrThrowArgs";
+import { FindManyOrderItemArgs } from "./args/FindManyOrderItemArgs";
+import { FindUniqueOrderItemArgs } from "./args/FindUniqueOrderItemArgs";
+import { FindUniqueOrderItemOrThrowArgs } from "./args/FindUniqueOrderItemOrThrowArgs";
+import { GroupByOrderItemArgs } from "./args/GroupByOrderItemArgs";
+import { UpdateManyOrderItemArgs } from "./args/UpdateManyOrderItemArgs";
+import { UpdateOneOrderItemArgs } from "./args/UpdateOneOrderItemArgs";
+import { UpsertOneOrderItemArgs } from "./args/UpsertOneOrderItemArgs";
+import { OrderItem } from "../../../models/OrderItem";
+import { AffectedRowsOutput } from "../../outputs/AffectedRowsOutput";
+import { AggregateOrderItem } from "../../outputs/AggregateOrderItem";
+import { OrderItemGroupBy } from "../../outputs/OrderItemGroupBy";
+export declare class OrderItemCrudResolver {
+    aggregateOrderItem(ctx: any, info: GraphQLResolveInfo, args: AggregateOrderItemArgs): Promise<AggregateOrderItem>;
+    createManyOrderItem(ctx: any, info: GraphQLResolveInfo, args: CreateManyOrderItemArgs): Promise<AffectedRowsOutput>;
+    createOneOrderItem(ctx: any, info: GraphQLResolveInfo, args: CreateOneOrderItemArgs): Promise<OrderItem>;
+    deleteManyOrderItem(ctx: any, info: GraphQLResolveInfo, args: DeleteManyOrderItemArgs): Promise<AffectedRowsOutput>;
+    deleteOneOrderItem(ctx: any, info: GraphQLResolveInfo, args: DeleteOneOrderItemArgs): Promise<OrderItem | null>;
+    findFirstOrderItem(ctx: any, info: GraphQLResolveInfo, args: FindFirstOrderItemArgs): Promise<OrderItem | null>;
+    findFirstOrderItemOrThrow(ctx: any, info: GraphQLResolveInfo, args: FindFirstOrderItemOrThrowArgs): Promise<OrderItem | null>;
+    orderItems(ctx: any, info: GraphQLResolveInfo, args: FindManyOrderItemArgs): Promise<OrderItem[]>;
+    orderItem(ctx: any, info: GraphQLResolveInfo, args: FindUniqueOrderItemArgs): Promise<OrderItem | null>;
+    getOrderItem(ctx: any, info: GraphQLResolveInfo, args: FindUniqueOrderItemOrThrowArgs): Promise<OrderItem | null>;
+    groupByOrderItem(ctx: any, info: GraphQLResolveInfo, args: GroupByOrderItemArgs): Promise<OrderItemGroupBy[]>;
+    updateManyOrderItem(ctx: any, info: GraphQLResolveInfo, args: UpdateManyOrderItemArgs): Promise<AffectedRowsOutput>;
+    updateOneOrderItem(ctx: any, info: GraphQLResolveInfo, args: UpdateOneOrderItemArgs): Promise<OrderItem | null>;
+    upsertOneOrderItem(ctx: any, info: GraphQLResolveInfo, args: UpsertOneOrderItemArgs): Promise<OrderItem>;
+}

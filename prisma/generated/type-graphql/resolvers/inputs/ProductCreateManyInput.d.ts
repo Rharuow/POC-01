@@ -6,4 +6,5 @@ export declare class ProductCreateManyInput {
     name: string;
     description: string;
     inventory_quantity?: number | undefined;
+    price?: number | undefined;
 }

@@ -5,7 +5,6 @@ const tslib_1 = require("tslib");
 const TypeGraphQL = tslib_1.__importStar(require("type-graphql"));
 const DateTimeFieldUpdateOperationsInput_1 = require("../inputs/DateTimeFieldUpdateOperationsInput");
 const FloatFieldUpdateOperationsInput_1 = require("../inputs/FloatFieldUpdateOperationsInput");
-const IntFieldUpdateOperationsInput_1 = require("../inputs/IntFieldUpdateOperationsInput");
 const NullableDateTimeFieldUpdateOperationsInput_1 = require("../inputs/NullableDateTimeFieldUpdateOperationsInput");
 const StringFieldUpdateOperationsInput_1 = require("../inputs/StringFieldUpdateOperationsInput");
 let OrderUpdateManyMutationInput = class OrderUpdateManyMutationInput {
@@ -35,12 +34,6 @@ tslib_1.__decorate([
     }),
     tslib_1.__metadata("design:type", DateTimeFieldUpdateOperationsInput_1.DateTimeFieldUpdateOperationsInput)
 ], OrderUpdateManyMutationInput.prototype, "updatedAt", void 0);
-tslib_1.__decorate([
-    TypeGraphQL.Field(_type => IntFieldUpdateOperationsInput_1.IntFieldUpdateOperationsInput, {
-        nullable: true
-    }),
-    tslib_1.__metadata("design:type", IntFieldUpdateOperationsInput_1.IntFieldUpdateOperationsInput)
-], OrderUpdateManyMutationInput.prototype, "amount", void 0);
 tslib_1.__decorate([
     TypeGraphQL.Field(_type => FloatFieldUpdateOperationsInput_1.FloatFieldUpdateOperationsInput, {
         nullable: true

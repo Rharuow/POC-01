@@ -1,5 +1,5 @@
 import { CategoriesProducts } from "../models/CategoriesProducts";
-import { Order } from "../models/Order";
+import { OrderItem } from "../models/OrderItem";
 import { ProductCount } from "../resolvers/outputs/ProductCount";
 export declare class Product {
     id: string;
@@ -9,7 +9,8 @@ export declare class Product {
     name: string;
     description: string;
     inventory_quantity: number;
+    price: number;
     categories?: CategoriesProducts[];
-    orders?: Order[];
+    orderItems?: OrderItem[];
     _count?: ProductCount | null;
 }

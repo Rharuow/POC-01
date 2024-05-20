@@ -1,5 +1,5 @@
-import { ClientCountSalesArgs } from "./args/ClientCountSalesArgs";
+import { ClientCountOrdersArgs } from "./args/ClientCountOrdersArgs";
 export declare class ClientCount {
-    sales: number;
-    getSales(root: ClientCount, args: ClientCountSalesArgs): number;
+    Orders: number;
+    getOrders(root: ClientCount, args: ClientCountOrdersArgs): number;
 }

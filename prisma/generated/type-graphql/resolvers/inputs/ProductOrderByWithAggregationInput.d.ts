@@ -12,6 +12,7 @@ export declare class ProductOrderByWithAggregationInput {
     name?: "asc" | "desc" | undefined;
     description?: "asc" | "desc" | undefined;
     inventory_quantity?: "asc" | "desc" | undefined;
+    price?: "asc" | "desc" | undefined;
     _count?: ProductCountOrderByAggregateInput | undefined;
     _avg?: ProductAvgOrderByAggregateInput | undefined;
     _max?: ProductMaxOrderByAggregateInput | undefined;

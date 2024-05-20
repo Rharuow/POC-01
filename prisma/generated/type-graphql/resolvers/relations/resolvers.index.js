@@ -1,6 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.SaleRelationsResolver = exports.ProductRelationsResolver = exports.OrderRelationsResolver = exports.DocumentRelationsResolver = exports.ClientRelationsResolver = exports.CategoryRelationsResolver = exports.CategoriesProductsRelationsResolver = exports.AddressRelationsResolver = void 0;
+exports.ProductRelationsResolver = exports.OrderItemRelationsResolver = exports.OrderRelationsResolver = exports.DocumentRelationsResolver = exports.ClientRelationsResolver = exports.CategoryRelationsResolver = exports.CategoriesProductsRelationsResolver = exports.AddressRelationsResolver = void 0;
 var AddressRelationsResolver_1 = require("./Address/AddressRelationsResolver");
 Object.defineProperty(exports, "AddressRelationsResolver", { enumerable: true, get: function () { return AddressRelationsResolver_1.AddressRelationsResolver; } });
 var CategoriesProductsRelationsResolver_1 = require("./CategoriesProducts/CategoriesProductsRelationsResolver");
@@ -13,7 +13,7 @@ var DocumentRelationsResolver_1 = require("./Document/DocumentRelationsResolver"
 Object.defineProperty(exports, "DocumentRelationsResolver", { enumerable: true, get: function () { return DocumentRelationsResolver_1.DocumentRelationsResolver; } });
 var OrderRelationsResolver_1 = require("./Order/OrderRelationsResolver");
 Object.defineProperty(exports, "OrderRelationsResolver", { enumerable: true, get: function () { return OrderRelationsResolver_1.OrderRelationsResolver; } });
+var OrderItemRelationsResolver_1 = require("./OrderItem/OrderItemRelationsResolver");
+Object.defineProperty(exports, "OrderItemRelationsResolver", { enumerable: true, get: function () { return OrderItemRelationsResolver_1.OrderItemRelationsResolver; } });
 var ProductRelationsResolver_1 = require("./Product/ProductRelationsResolver");
 Object.defineProperty(exports, "ProductRelationsResolver", { enumerable: true, get: function () { return ProductRelationsResolver_1.ProductRelationsResolver; } });
-var SaleRelationsResolver_1 = require("./Sale/SaleRelationsResolver");
-Object.defineProperty(exports, "SaleRelationsResolver", { enumerable: true, get: function () { return SaleRelationsResolver_1.SaleRelationsResolver; } });

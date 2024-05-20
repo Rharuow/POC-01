@@ -6,5 +6,6 @@ export declare class ProductCountAggregate {
     name: number;
     description: number;
     inventory_quantity: number;
+    price: number;
     _all: number;
 }

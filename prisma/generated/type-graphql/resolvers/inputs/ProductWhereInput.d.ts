@@ -1,8 +1,9 @@
 import { CategoriesProductsListRelationFilter } from "../inputs/CategoriesProductsListRelationFilter";
 import { DateTimeFilter } from "../inputs/DateTimeFilter";
 import { DateTimeNullableFilter } from "../inputs/DateTimeNullableFilter";
+import { FloatFilter } from "../inputs/FloatFilter";
 import { IntFilter } from "../inputs/IntFilter";
-import { OrderListRelationFilter } from "../inputs/OrderListRelationFilter";
+import { OrderItemListRelationFilter } from "../inputs/OrderItemListRelationFilter";
 import { StringFilter } from "../inputs/StringFilter";
 export declare class ProductWhereInput {
     AND?: ProductWhereInput[] | undefined;
@@ -15,6 +16,7 @@ export declare class ProductWhereInput {
     name?: StringFilter | undefined;
     description?: StringFilter | undefined;
     inventory_quantity?: IntFilter | undefined;
+    price?: FloatFilter | undefined;
     categories?: CategoriesProductsListRelationFilter | undefined;
-    orders?: OrderListRelationFilter | undefined;
+    orderItems?: OrderItemListRelationFilter | undefined;
 }

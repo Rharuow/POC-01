@@ -6,7 +6,6 @@ const TypeGraphQL = tslib_1.__importStar(require("type-graphql"));
 const DateTimeFilter_1 = require("../inputs/DateTimeFilter");
 const DateTimeNullableFilter_1 = require("../inputs/DateTimeNullableFilter");
 const FloatFilter_1 = require("../inputs/FloatFilter");
-const IntFilter_1 = require("../inputs/IntFilter");
 const StringFilter_1 = require("../inputs/StringFilter");
 let OrderScalarWhereInput = class OrderScalarWhereInput {
 };
@@ -54,12 +53,6 @@ tslib_1.__decorate([
     tslib_1.__metadata("design:type", DateTimeFilter_1.DateTimeFilter)
 ], OrderScalarWhereInput.prototype, "updatedAt", void 0);
 tslib_1.__decorate([
-    TypeGraphQL.Field(_type => IntFilter_1.IntFilter, {
-        nullable: true
-    }),
-    tslib_1.__metadata("design:type", IntFilter_1.IntFilter)
-], OrderScalarWhereInput.prototype, "amount", void 0);
-tslib_1.__decorate([
     TypeGraphQL.Field(_type => FloatFilter_1.FloatFilter, {
         nullable: true
     }),
@@ -70,13 +63,7 @@ tslib_1.__decorate([
         nullable: true
     }),
     tslib_1.__metadata("design:type", StringFilter_1.StringFilter)
-], OrderScalarWhereInput.prototype, "productId", void 0);
-tslib_1.__decorate([
-    TypeGraphQL.Field(_type => StringFilter_1.StringFilter, {
-        nullable: true
-    }),
-    tslib_1.__metadata("design:type", StringFilter_1.StringFilter)
-], OrderScalarWhereInput.prototype, "saleId", void 0);
+], OrderScalarWhereInput.prototype, "clientId", void 0);
 exports.OrderScalarWhereInput = OrderScalarWhereInput = tslib_1.__decorate([
     TypeGraphQL.InputType("OrderScalarWhereInput", {})
 ], OrderScalarWhereInput);

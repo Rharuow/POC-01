@@ -1,5 +1,5 @@
 export { CategoryCountProdutosArgs } from "./CategoryCountProdutosArgs";
-export { ClientCountSalesArgs } from "./ClientCountSalesArgs";
+export { ClientCountOrdersArgs } from "./ClientCountOrdersArgs";
+export { OrderCountOrderItemsArgs } from "./OrderCountOrderItemsArgs";
 export { ProductCountCategoriesArgs } from "./ProductCountCategoriesArgs";
-export { ProductCountOrdersArgs } from "./ProductCountOrdersArgs";
-export { SaleCountOrdersArgs } from "./SaleCountOrdersArgs";
+export { ProductCountOrderItemsArgs } from "./ProductCountOrderItemsArgs";

@@ -53,6 +53,12 @@ tslib_1.__decorate([
         nullable: false
     }),
     tslib_1.__metadata("design:type", Number)
+], ProductCountAggregate.prototype, "price", void 0);
+tslib_1.__decorate([
+    TypeGraphQL.Field(_type => TypeGraphQL.Int, {
+        nullable: false
+    }),
+    tslib_1.__metadata("design:type", Number)
 ], ProductCountAggregate.prototype, "_all", void 0);
 exports.ProductCountAggregate = ProductCountAggregate = tslib_1.__decorate([
     TypeGraphQL.ObjectType("ProductCountAggregate", {})

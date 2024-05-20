@@ -3,6 +3,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports.Order = void 0;
 const tslib_1 = require("tslib");
 const TypeGraphQL = tslib_1.__importStar(require("type-graphql"));
+const OrderCount_1 = require("../resolvers/outputs/OrderCount");
 let Order = class Order {
 };
 exports.Order = Order;
@@ -31,12 +32,6 @@ tslib_1.__decorate([
     tslib_1.__metadata("design:type", Date)
 ], Order.prototype, "updatedAt", void 0);
 tslib_1.__decorate([
-    TypeGraphQL.Field(_type => TypeGraphQL.Int, {
-        nullable: false
-    }),
-    tslib_1.__metadata("design:type", Number)
-], Order.prototype, "amount", void 0);
-tslib_1.__decorate([
     TypeGraphQL.Field(_type => TypeGraphQL.Float, {
         nullable: false
     }),
@@ -47,13 +42,13 @@ tslib_1.__decorate([
         nullable: false
     }),
     tslib_1.__metadata("design:type", String)
-], Order.prototype, "productId", void 0);
+], Order.prototype, "clientId", void 0);
 tslib_1.__decorate([
-    TypeGraphQL.Field(_type => String, {
-        nullable: false
+    TypeGraphQL.Field(_type => OrderCount_1.OrderCount, {
+        nullable: true
     }),
-    tslib_1.__metadata("design:type", String)
-], Order.prototype, "saleId", void 0);
+    tslib_1.__metadata("design:type", OrderCount_1.OrderCount)
+], Order.prototype, "_count", void 0);
 exports.Order = Order = tslib_1.__decorate([
     TypeGraphQL.ObjectType("Order", {})
 ], Order);
