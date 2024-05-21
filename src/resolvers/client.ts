@@ -7,12 +7,17 @@ export class ClienteResolver {
   constructor(private prisma = new PrismaClient()) {}
 
   @Query((_types) => [Client])
-  async clients() {
-    return await this.prisma.client.findMany();
+  async getClients() {
+    return await this.prisma.client.findMany({
+      include: {
+        address: true,
+        document: true,
+      },
+    });
   }
 
   @Query((_types) => Client)
-  async client(@Arg("id") id: string) {
+  async getClient(@Arg("id") id: string) {
     return await this.prisma.client.findUnique({
       where: { id },
     });
@@ -43,6 +48,10 @@ export class ClienteResolver {
               delivery,
             },
           },
+        },
+        include: {
+          address: true,
+          document: true,
         },
       });
     } catch (error) {

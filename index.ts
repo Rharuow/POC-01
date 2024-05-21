@@ -4,6 +4,7 @@ import { ApolloServer } from "apollo-server";
 import { PrismaClient } from "@prisma/client";
 import { resolvers } from "./prisma/generated/type-graphql";
 import { ClienteResolver } from "./src/resolvers/client";
+import { ProductResolver } from "./src/resolvers/product";
 
 const prisma = new PrismaClient();
 
@@ -13,7 +14,7 @@ interface Context {
 
 async function main() {
   const schema = await buildSchema({
-    resolvers: [...resolvers, ClienteResolver],
+    resolvers: [...resolvers, ClienteResolver, ProductResolver],
     validate: false,
   });
 
