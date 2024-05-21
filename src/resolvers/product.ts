@@ -48,11 +48,16 @@ export class ProductResolver {
 
   @Mutation((_types) => ID)
   async deleteProduct(@Arg("id") id: string) {
-    return await this.prisma.product.delete({
-      where: {
-        id,
-      },
-    });
+    return (
+      await this.prisma.product.delete({
+        where: {
+          id,
+        },
+        select: {
+          id: true,
+        },
+      })
+    ).id;
   }
 
   @Mutation((_types) => Product)
