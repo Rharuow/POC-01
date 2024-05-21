@@ -93,7 +93,7 @@ model Product {
 model CategoriesProducts {
   id                     String     @id @default(uuid())  
 
-  categoryName             String
+  categoryName           String
   category               Category @relation(fields: [categoryName], references: [name], onDelete: Cascade)
 
   productId              String
