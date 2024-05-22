@@ -28,8 +28,6 @@ export class ProductResolver {
     @Arg("inventory_quantity") inventory_quantity: number,
     @Arg("categories", (type) => [String]) categories: Array<string>
   ) {
-    console.log("HERE");
-
     return await this.prisma.product.create({
       data: {
         name,
