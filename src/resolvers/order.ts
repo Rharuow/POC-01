@@ -1,5 +1,5 @@
 import { Prisma, PrismaClient } from "@prisma/client";
-import { Arg, Mutation, Query, Resolver } from "type-graphql";
+import { Arg, ID, Mutation, Query, Resolver } from "type-graphql";
 import { Order, OrderItem } from "../../prisma/generated/type-graphql";
 import { CreateOrderItemInput } from "../inputs/CreateOrderItemInput";
 
@@ -80,5 +80,16 @@ export class OrderResolver {
         id,
       },
     });
+  }
+
+  @Mutation((_types) => ID)
+  async deleteOrder(@Arg("id") id: string) {
+    return (
+      await this.prisma.order.delete({
+        where: {
+          id,
+        },
+      })
+    ).id;
   }
 }
