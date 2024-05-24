@@ -1,32 +1,77 @@
-import { Prisma, PrismaClient } from "@prisma/client";
+import { PrismaClient } from "@prisma/client";
 import { Arg, ID, Mutation, Query, Resolver } from "type-graphql";
-import { Order, OrderItem } from "../../prisma/generated/type-graphql";
 import { CreateOrderItemInput } from "../inputs/CreateOrderItemInput";
+import { GetOrder } from "../inputs/Order";
 
 @Resolver()
 export class OrderResolver {
   constructor(private prisma = new PrismaClient()) {}
 
-  @Query((_types) => [Order])
+  @Query((_types) => [GetOrder])
   async getOrders() {
-    return await this.prisma.order.findMany();
-  }
+    console.log(
+      await this.prisma.order.findMany({
+        include: {
+          client: {
+            include: {
+              address: true,
+              document: true,
+            },
+          },
+          orderItems: {
+            include: {
+              product: true,
+            },
+          },
+        },
+      })
+    );
 
-  @Query((_types) => Order)
-  async getOrder(@Arg("id") id: string) {
-    return await this.prisma.order.findUnique({
-      where: { id },
+    return await this.prisma.order.findMany({
+      include: {
+        client: {
+          include: {
+            address: true,
+            document: true,
+          },
+        },
+        orderItems: {
+          include: {
+            product: true,
+          },
+        },
+      },
     });
   }
 
-  @Mutation((_types) => Order)
+  @Query((_types) => GetOrder)
+  async getOrder(@Arg("id") id: string) {
+    return await this.prisma.order.findUnique({
+      where: { id },
+      include: {
+        client: {
+          include: {
+            address: true,
+            document: true,
+          },
+        },
+        orderItems: {
+          include: {
+            product: true,
+          },
+        },
+      },
+    });
+  }
+
+  @Mutation((_types) => GetOrder)
   async createOrder(
     @Arg("totalPrice") totalPrice: number,
     @Arg("clientId") clientId: string,
     @Arg("orderItems", (type) => [CreateOrderItemInput])
     orderItems: Array<CreateOrderItemInput>
   ) {
-    return this.prisma.order.create({
+    return await this.prisma.order.create({
       data: {
         totalPrice,
         client: {
@@ -44,18 +89,31 @@ export class OrderResolver {
           },
         },
       },
+      include: {
+        client: {
+          include: {
+            address: true,
+            document: true,
+          },
+        },
+        orderItems: {
+          include: {
+            product: true,
+          },
+        },
+      },
     });
   }
 
-  @Mutation((_types) => Order)
+  @Mutation((_types) => GetOrder)
   async updateOrder(
     @Arg("id") id: string,
     @Arg("totalPrice") totalPrice: number,
     @Arg("clientId") clientId: string,
-    @Arg("orderItems", (type) => [CreateOrderItemInput])
+    @Arg("orderItems", (_type) => [CreateOrderItemInput])
     orderItems: Array<CreateOrderItemInput>
   ) {
-    return this.prisma.order.update({
+    return await this.prisma.order.update({
       data: {
         totalPrice,
         client: {
@@ -78,6 +136,19 @@ export class OrderResolver {
       },
       where: {
         id,
+      },
+      include: {
+        client: {
+          include: {
+            address: true,
+            document: true,
+          },
+        },
+        orderItems: {
+          include: {
+            product: true,
+          },
+        },
       },
     });
   }
