@@ -1,12 +1,12 @@
 import { PrismaClient } from "@prisma/client";
 import { Arg, ID, Mutation, Query, Resolver } from "type-graphql";
-import { Address, Client } from "../../prisma/generated/type-graphql";
+import { GetClient } from "../inputs/Client";
 
 @Resolver()
 export class ClienteResolver {
   constructor(private prisma = new PrismaClient()) {}
 
-  @Query((_types) => [Client])
+  @Query((_types) => [GetClient])
   async getClients() {
     return await this.prisma.client.findMany({
       include: {
@@ -16,14 +16,28 @@ export class ClienteResolver {
     });
   }
 
-  @Query((_types) => Client)
+  @Query((_types) => GetClient)
   async getClient(@Arg("id") id: string) {
+    console.log(
+      await this.prisma.client.findUnique({
+        where: { id },
+        include: {
+          address: true,
+          document: true,
+        },
+      })
+    );
+
     return await this.prisma.client.findUnique({
       where: { id },
+      include: {
+        address: true,
+        document: true,
+      },
     });
   }
 
-  @Mutation((_types) => Client)
+  @Mutation((_types) => GetClient)
   async createClient(
     @Arg("name") name: string,
     @Arg("email") email: string,
@@ -60,7 +74,7 @@ export class ClienteResolver {
     }
   }
 
-  @Mutation((_types) => Client)
+  @Mutation((_types) => GetClient)
   async updateClient(
     @Arg("id") id: string,
     @Arg("name") name: string,
@@ -90,6 +104,10 @@ export class ClienteResolver {
         },
         where: {
           id,
+        },
+        include: {
+          address: true,
+          document: true,
         },
       });
     } catch (error) {

@@ -2,7 +2,6 @@ import "reflect-metadata";
 import { buildSchema } from "type-graphql";
 import { ApolloServer } from "apollo-server";
 import { PrismaClient } from "@prisma/client";
-import { resolvers } from "./prisma/generated/type-graphql";
 import { ClienteResolver } from "./src/resolvers/client";
 import { ProductResolver } from "./src/resolvers/product";
 import { OrderResolver } from "./src/resolvers/order";
@@ -15,7 +14,7 @@ interface Context {
 
 async function main() {
   const schema = await buildSchema({
-    resolvers: [...resolvers, ClienteResolver, ProductResolver, OrderResolver],
+    resolvers: [ClienteResolver, ProductResolver, OrderResolver],
     validate: false,
   });
 
