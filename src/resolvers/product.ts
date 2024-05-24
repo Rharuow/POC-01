@@ -1,26 +1,29 @@
 import { PrismaClient } from "@prisma/client";
 import { Arg, Args, ID, Mutation, Query, Resolver } from "type-graphql";
-import { Product } from "../../prisma/generated/type-graphql";
+import { GetProduct } from "../inputs/Product";
 
 @Resolver()
 export class ProductResolver {
   constructor(private prisma = new PrismaClient()) {}
 
-  @Query((_types) => [Product])
+  @Query((_types) => [GetProduct])
   async getProducts() {
-    return await this.prisma.product.findMany();
+    return await this.prisma.product.findMany({
+      include: { categories: true },
+    });
   }
 
-  @Query((_types) => Product)
+  @Query((_types) => GetProduct)
   async getProduct(@Arg("id") id: string) {
     return await this.prisma.product.findUnique({
       where: {
         id,
       },
+      include: { categories: true },
     });
   }
 
-  @Mutation((_types) => Product)
+  @Mutation((_types) => GetProduct)
   async createProduct(
     @Arg("name") name: string,
     @Arg("price") price: number,
@@ -41,6 +44,9 @@ export class ProductResolver {
           },
         },
       },
+      include: {
+        categories: true,
+      },
     });
   }
 
@@ -58,7 +64,7 @@ export class ProductResolver {
     ).id;
   }
 
-  @Mutation((_types) => Product)
+  @Mutation((_types) => GetProduct)
   async updateProduct(
     @Arg("name") name: string,
     @Arg("price") price: number,
@@ -86,6 +92,7 @@ export class ProductResolver {
           },
         },
       },
+      include: { categories: true },
     });
   }
 }

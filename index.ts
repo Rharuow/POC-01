@@ -5,6 +5,7 @@ import { PrismaClient } from "@prisma/client";
 import { ClienteResolver } from "./src/resolvers/client";
 import { ProductResolver } from "./src/resolvers/product";
 import { OrderResolver } from "./src/resolvers/order";
+import { CategoryResolver } from "./src/resolvers/category";
 
 const prisma = new PrismaClient();
 
@@ -14,7 +15,12 @@ interface Context {
 
 async function main() {
   const schema = await buildSchema({
-    resolvers: [ClienteResolver, ProductResolver, OrderResolver],
+    resolvers: [
+      ClienteResolver,
+      ProductResolver,
+      OrderResolver,
+      CategoryResolver,
+    ],
     validate: false,
   });
 

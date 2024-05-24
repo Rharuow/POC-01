@@ -18,16 +18,6 @@ export class ClienteResolver {
 
   @Query((_types) => GetClient)
   async getClient(@Arg("id") id: string) {
-    console.log(
-      await this.prisma.client.findUnique({
-        where: { id },
-        include: {
-          address: true,
-          document: true,
-        },
-      })
-    );
-
     return await this.prisma.client.findUnique({
       where: { id },
       include: {
