@@ -1,6 +1,6 @@
 import { PrismaClient } from "@prisma/client";
 import { Arg, Args, ID, Mutation, Query, Resolver } from "type-graphql";
-import { GetProduct } from "../inputs/Product";
+import { GetProduct } from "../objects/Product";
 
 @Resolver()
 export class ProductResolver {

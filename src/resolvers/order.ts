@@ -1,7 +1,7 @@
 import { PrismaClient } from "@prisma/client";
 import { Arg, ID, Mutation, Query, Resolver } from "type-graphql";
 import { CreateOrderItemInput } from "../inputs/CreateOrderItemInput";
-import { GetOrder } from "../inputs/Order";
+import { GetOrder } from "../objects/Order";
 
 @Resolver()
 export class OrderResolver {
