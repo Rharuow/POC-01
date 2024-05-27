@@ -9,24 +9,6 @@ export class OrderResolver {
 
   @Query((_types) => [GetOrder])
   async getOrders() {
-    console.log(
-      await this.prisma.order.findMany({
-        include: {
-          client: {
-            include: {
-              address: true,
-              document: true,
-            },
-          },
-          orderItems: {
-            include: {
-              product: true,
-            },
-          },
-        },
-      })
-    );
-
     return await this.prisma.order.findMany({
       include: {
         client: {

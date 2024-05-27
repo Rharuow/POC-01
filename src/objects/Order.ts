@@ -9,6 +9,9 @@ export class GetOrder implements Partial<Order> {
   id: string;
 
   @Field()
+  createdAt: Date;
+
+  @Field()
   totalPrice: number;
 
   @Field((_types) => GetClient)

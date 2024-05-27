@@ -73,24 +73,46 @@ export class ProductResolver {
     @Arg("categories", (type) => [String]) categories: Array<string>,
     @Arg("id") id: string
   ) {
+    const product = await this.prisma.product.findUnique({
+      where: {
+        id,
+      },
+      include: {
+        categories: true,
+        orderItems: {
+          include: {
+            order: true,
+          },
+        },
+      },
+    });
+
     return await this.prisma.product.update({
       where: {
         id,
       },
       data: {
-        name: { set: name },
-        price: { set: price },
-        description: { set: description },
-        inventory_quantity: { set: inventory_quantity },
-        categories: {
-          deleteMany: {
-            productId: id,
+        ...(product?.name !== name && { name: { set: name } }),
+        ...(product?.price !== price && { price: { set: price } }),
+        ...(product?.description !== description && {
+          description: { set: description },
+        }),
+        ...(product?.inventory_quantity !== inventory_quantity && {
+          inventory_quantity: { set: inventory_quantity },
+        }),
+        ...(product?.categories.every((category) =>
+          categories.includes(category.categoryName)
+        ) && {
+          categories: {
+            deleteMany: {
+              productId: id,
+            },
+            createMany: {
+              data: categories.map((category) => ({ categoryName: category })),
+              skipDuplicates: true,
+            },
           },
-          createMany: {
-            data: categories.map((category) => ({ categoryName: category })),
-            skipDuplicates: true,
-          },
-        },
+        }),
       },
       include: { categories: true },
     });
